@@ -7,7 +7,7 @@ import HeaderContainer from '../components/header.jsx';
 const Hero = () => {
   return (
     <div>
-      <div className="home-hero background h-[100vh] ">
+      <div className="home-hero background bg-[url('src/assets/hero_background_image.png')] h-[100vh] ">
         <div className="mx-auto w-[68%]  max-w-[98%] pt-4">
           <HeaderContainer />
           
