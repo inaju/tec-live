@@ -14,7 +14,7 @@ const headerData = {
       link: '/sermons',
     },
   ],
-  logo: 'src/assets/logo.svg',
+  logo: './src/assets/logo.svg',
   buttons: [
     {
       text: 'Partner',
