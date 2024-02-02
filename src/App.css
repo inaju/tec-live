@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.blend-container{
+  color:black
+}
+.blend-container span{
+  color:white
+}
 .background {
   background: linear-gradient(
     180deg,
