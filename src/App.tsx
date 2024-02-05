@@ -1,6 +1,9 @@
 import PNI_Mic from './assets/PNI-mic.png';
+import BottomCTA from './components/bottom-cta.jsx';
+import MailingListForm from './components/mailing-list-form.jsx';
 import CarouselContainer from './components/carousel-container.jsx';
 import Hero from './containers/hero.jsx';
+
 
 const carouselItemData = [
   {
@@ -29,7 +32,7 @@ export default function App() {
           <div className="flex h-[50vh]"></div>
         </div>
       </div>
-      <div className="bg-[#E8E6E2]">
+      <div className="bg-[#E8E6E2] pb-24">
         <div>
           <CarouselContainer data={carouselItemData[0]} />
         </div>
@@ -56,7 +59,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="border-[4px] border-white bg-[#F78E00] p-6 text-white w-[800px] mx-auto flex flex-col items-center justify-center ">
+        <div className=" mx-auto  flex w-[800px] flex-col items-center justify-center border-[4px] border-white bg-[#F78E00] p-6 text-white ">
           <div className="mx-auto max-w-[697px] text-[1.5rem] ">
             <div>
               Join Us Every Sunday{' '}
@@ -73,6 +76,8 @@ export default function App() {
           </div>
         </div>
       </div>
+      <BottomCTA />
+      <MailingListForm />
     </div>
   );
 }
