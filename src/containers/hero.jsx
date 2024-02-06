@@ -9,7 +9,7 @@ const Hero = () => {
     <div>
       <div className=" relative bg-[-340px_-1rem] h-[173vh]"
         style={{
-          backgroundImage: `url('src/assets/hero.png')`,
+          backgroundImage: `url('/assets/hero.png')`,
           backgroundRepeat: 'no-repeat',
         }}
       >

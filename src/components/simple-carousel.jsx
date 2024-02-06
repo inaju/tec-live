@@ -6,13 +6,13 @@ import CarouselItems from './carousel-items';
 function SimpleCarousel({ data }) {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
-    useEffect(() => {
-        if (data.length < activeSlideIndex) {
-            setInterval(() => setActiveSlideIndex(activeSlideIndex + 1), 1000)
-        }
-        else setInterval(() => setActiveSlideIndex(0), 1000)
+    // useEffect(() => {
+    //     if (data.length < activeSlideIndex) {
+    //         setInterval(() => setActiveSlideIndex(activeSlideIndex + 1), 1000)
+    //     }
+    //     else setInterval(() => setActiveSlideIndex(0), 1000)
 
-    }, [data, activeSlideIndex])
+    // }, [data, activeSlideIndex])
     return (
         <div>
             <ReactSimplyCarousel
