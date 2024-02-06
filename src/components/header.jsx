@@ -35,7 +35,7 @@ const HeaderContainer = () => {
   return (
     <div className="flex w-full items-center justify-between text-[0.85rem]">
       <div>
-        <img className="h-[3.5rem] w-[3.5rem]" src={"/src/assets/logo.svg"} />
+        <img className="h-[3.5rem] w-[3.5rem]" src={"/assets/logo.svg"} />
       </div>
       <div className="flex gap-4 font-semibold text-[#FFFFFF] ">
         {headerData.links.map((item, index) => (
