@@ -7,9 +7,12 @@ import HeaderContainer from '../components/header.jsx';
 const Hero = () => {
   return (
     <div>
-      <div className=" relative  bg-[url('src/assets/hero.png')] 
-       bg-no-repeat  bg-[-340px_-1rem] h-[173vh] object-contain
-     ">
+      <div className=" relative bg-[-340px_-1rem] h-[173vh]"
+        style={{
+          backgroundImage: `url('src/assets/hero.png')`,
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="mx-auto w-[68%] max-w-[98%] pt-4">
           <HeaderContainer />
 
