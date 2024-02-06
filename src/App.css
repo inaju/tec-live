@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "mona";
+  src: url("../public/fonts/mona_sans/Mona-Sans.ttf");
+}
+
+body{
+  overflow-x:hidden
+}
 .footer-image {
-   border:1px solid red;
+   /* border:1px solid red; */
   width:100%;
   height:100%;
   position:absolute;
@@ -20,31 +28,28 @@
 .blend-container span {
   color: white;
 }
-.background {
-  background: linear-gradient(
-    180deg,
-    rgba(18, 21, 25, 0) 0%,
-    rgba(18, 21, 25, 0.6) 100%
-  );
-}
-.hero {
-  background: #121519;
-}
+
 
 .home-hero {
-  background: #121519;
 
   background-size: cover;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       180deg,
       rgba(18, 21, 25, 0) 0%,
       rgba(18, 21, 25, 0.85) 0%
     ),
-    url('src/assets/hero_background_image.png');
+    url('src/assets/hero_background_image.png'); */
   background-repeat: no-repeat;
   background-size: 120vw 160vh;
   background-position: -140px -1rem;
-  height: 143vh;
+  height: 133vh;
+  
+background: -moz-radial-gradient(center, ellipse cover,  rgba(43,43,43,1) 34%, rgba(43,43,43,0.42) 72%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(34%,rgba(43,43,43,1)), color-stop(72%,rgba(43,43,43,0.42)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(43,43,43,1) 34%,rgba(43,43,43,0.42) 72%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(43,43,43,1) 34%,rgba(43,43,43,0.42) 72%,rgba(255,255,255,0) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(43,43,43,1) 34%,rgba(43,43,43,0.42) 72%,rgba(255,255,255,0) 100%); /* IE10+ */
+  /* border:1px solid red; */
 }
 
 .basic-hover-state:hover {
