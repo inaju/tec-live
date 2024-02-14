@@ -9,7 +9,6 @@
   "type": "module",
   "engines": {
     "node": ">=18.11.0",
-    "pnpm": ">=7.1.0"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -39,7 +38,6 @@
   "scripts": {
     "preinstall": "command -v git >/dev/null 2>&1 && git config core.hooksPath git-hooks || true",
     "build": "vite build",
-    "dev:update-deps": "rm -rf pnpm-lock.yaml node_modules/ **/node_modules && pnpm install",
     "dev": "vite dev",
     "format": "prettier --write .",
     "lint:format": "prettier --cache --check .",
