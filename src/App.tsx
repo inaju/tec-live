@@ -72,29 +72,31 @@ export default function App() {
           rel="stylesheet"
         />
       </head>
-      <div className="relative">
-        <div className="background">
-          {/* <div className=" ">
-      </div> */}
-          <div className="">
-            <Hero />
-          </div>
-        </div>
 
+      <div className="relative">
+        <div className="">
+          <Hero />
+        </div>
         <div className="bg-[#E8E6E2] pb-24 pt-40">
           <div className="flex flex-col gap-28">
-
             <SimpleCarousel data={carouselItemDataRight} />
-
-
             <SimpleCarousel data={carouselItemDataLeft} />
           </div>
-
-
           <div className=" relative mx-auto flex flex-col items-center justify-center py-20">
-            {/* <div className="bg-white top-10 left-10 w-[450px] h-[300px] -z-1000 absolute"></div> */}
-            <div className=" absolute left-[6.6%] ">
-              <div className=" font-mona blend-container max-w-[600px] text-[3.5rem] font-bold leading-[5rem]">
+            <div className=" xl:hidden px-6 pb-8">
+              <div className="font-mona blend-container text-3xl font-bold leading-[2.5rem]">
+                A Fam<span>ily Bound </span>Togeth<span>er With Love</span>
+              </div>
+              <div className="blend-container mt-4 max-w-[500px] text-[1rem] font-inter ">
+                We seek to promote brotherly love and affection as we{' '}
+                fellowship. Serving{' '}
+                God together with one passion, and knit in love as
+                family. Put a picture of a lovely setting or people
+                smiling sha at a meeting
+              </div>
+            </div>
+            <div className="absolute left-[6.6%] hidden xl:block ">
+              <div className="font-mona blend-container max-w-[600px] text-[3.5rem] font-bold leading-[5rem]">
                 A Fam<span>ily Bound </span>Togeth<span>er With Love</span>
               </div>
               <div className="blend-container mt-4 max-w-[500px] text-[1rem] font-inter ">
@@ -105,13 +107,13 @@ export default function App() {
                     smiling sha at a meeting</span>
               </div>
             </div>
-            <div className="h-[416px] w-[826px] border-[10px]">
-              <img src={PNI_Mic} />
+            <div className="xl:h-[416px] xl:w-[826px]  xl:border-[10px] ">
+              <img src={PNI_Mic} className="xl:h-full xl:w-full xl:px-1 h-[50vh] w-[150vw] xl:object-fill object-cover px-6 " />
             </div>
           </div>
 
-          <div className=" font-mona mx-auto  flex w-[800px] flex-col items-center justify-center border-[4px] border-white bg-[#F78E00] p-6 text-white ">
-            <div className="mx-auto max-w-[697px] text-[1.5rem] ">
+          <div className=" font-mona mx-auto  flex mt-10 xl:w-[800px] flex-col items-center justify-center border-[4px] border-white bg-[#F78E00] p-6 text-white ">
+            <div className="mx-auto max-w-[697px] space-y-4 text-lg xl:text-[1.5rem] ">
               <div>
                 Join Us Every Sunday{' '}
                 <span className="mx-2 font-semibold">

@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className="bg-[#121519] pb-20">
             <div className="bg-[#65656599] h-0.5 max-w-[1000px] items-center flex mx-auto"></div>
-            <div className="flex justify-between max-w-[1000px] mx-auto mt-10 mb-20">
+            <div className="flex flex-col px-10 gap-10  sm:flex-row justify-between max-w-[1000px] mx-auto mt-10 mb-20">
 
                 <div>
                     <FooterHeader text="The Equipping Center" />

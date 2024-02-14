@@ -33,6 +33,8 @@ function SimpleCarousel({ data }) {
                         paddingInline: "0.5rem",
                         borderRadius: "50%",
                         marginTop: "1.5rem",
+                        bottom: "10rem",
+
                         paddingBlock: "0.2rem",
                     },
                     children: <span className="font-mona">{`>`}</span>,
@@ -48,7 +50,6 @@ function SimpleCarousel({ data }) {
                         cursor: 'pointer',
                         paddingInline: "0.5rem",
                         paddingBlock: "0.2rem",
-                        borderRadius: "50%"
 
                     },
                     children: <span className="font-mona">{`<`}</span>,
@@ -58,13 +59,13 @@ function SimpleCarousel({ data }) {
                         // border: '1px solid red',
                         itemsToScroll: 1,
                         itemsToShow: 1,
-                        // minWidth: 120,
+                        minWidth: 120,
                     },
                 ]}
             >
 
                 {data && data?.map((item, index) => (
-                    <div className=" min-w-[1100px] cursor-pointer" key={index} >
+                    <div className=" xl:min-w-[1100px] cursor-pointer" key={index} >
                         <CarouselItems
                             imageLocation={item.imageLocation}
                             imageSrc={item.imageSrc}

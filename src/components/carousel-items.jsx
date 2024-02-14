@@ -2,8 +2,8 @@ const CarouselItems = ({ imageLocation, imageSrc, subText, text }) => {
   return (
     <div
       className="relative 
-    mt-10 flex w-[800px] mx-auto  justify-between border-[5px] border-solid
-  border-[rgba(255,114,0,0.20)] p-14 py-28 min-h-[500px]  "
+    mt-10 flex xl:w-[800px] w-[300px]  mx-auto  justify-between border-[5px] border-solid
+  border-[rgba(255,114,0,0.20)] p-8 xl:p-14 xl:py-28 min-h-[500px]  "
     >
       <CarouselImage imageLocation={imageLocation} imageSrc={imageSrc} />
       <div
@@ -37,7 +37,7 @@ const getCorrectPosition = (imageLocation) => {
 const CarouselImage = ({ imageLocation, imageSrc }) => {
   return (
     <div className={getCorrectPosition(imageLocation)}>
-      <img className="h-[430px] min-w-[350px]" src={imageSrc} />
+      <img className=" hidden xl:block xl:h-[430px] xl:min-w-[350px]" src={imageSrc} />
     </div>
   );
 };

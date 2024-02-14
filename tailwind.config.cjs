@@ -5,7 +5,8 @@ module.exports = {
   mode: 'jit', theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "linear-gradient(to right bottom, rgba('#7ed56f',0.8), rgba('#28b485',0.8)), url('src/assets/hero_background_image.png')",
+        'hero-pattern': "url('/assets/hero.png')",
+        'cta-background-image': `url('/assets/footer_image_overlay.png')`
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
