@@ -4,6 +4,7 @@ import MailingListForm from './components/mailing-list-form.jsx';
 import SimpleCarousel from './components/simple-carousel.jsx';
 import Footer from './components/footer.jsx';
 import Hero from './containers/hero.jsx';
+import HomeHero from './containers/HomeHero.jsx';
 
 const carouselItemDataRight = [
   {
@@ -68,7 +69,7 @@ export default function App() {
         <link href="https://fonts.gstatic.com"
           rel="preconnect" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
           rel="stylesheet"
         />
       </head>
@@ -82,10 +83,11 @@ export default function App() {
             <SimpleCarousel data={carouselItemDataRight} />
             <SimpleCarousel data={carouselItemDataLeft} />
           </div>
-          <div className=" relative mx-auto flex flex-col items-center justify-center py-20">
+          <div className=" relative mx-auto flex flex-col items-center justify-center py-20 max-w-[1200px] ">
+            {/* {"mobile"} */}
             <div className=" xl:hidden px-6 pb-8">
               <div className="font-mona blend-container text-3xl font-bold leading-[2.5rem]">
-                A Fam<span>ily Bound </span>Togeth<span>er With Love</span>
+                A Family Bound Together With Love
               </div>
               <div className="blend-container mt-4 max-w-[500px] text-[1rem] font-inter ">
                 We seek to promote brotherly love and affection as we{' '}
@@ -95,27 +97,34 @@ export default function App() {
                 smiling sha at a meeting
               </div>
             </div>
-            <div className="absolute left-[6.6%] hidden xl:block ">
-              <div className="font-mona blend-container max-w-[600px] text-[3.5rem] font-bold leading-[5rem]">
-                A Fam<span>ily Bound </span>Togeth<span>er With Love</span>
+            {/* {"desktop"} */}
+
+            <div className="absolute left-[5%]  top-[10.0625rem] hidden xl:block ">
+              <div className="font-mona blend-container max-w-[46.9375rem] text-[4rem] font-bold leading-[5rem]">
+                A Fami<span>ly Bound</span> Togeth<span>er With Love</span>
               </div>
-              <div className="blend-container mt-4 max-w-[500px] text-[1rem] font-inter ">
-                We seek to promote b<span>rotherly love and affection as we{' '}
-                  fellowship.</span> Serving{' '}
-                God together <span>with one passion, and knit in love as
-                  family.</span> Put a picture of a love<span>ly setting or people
-                    smiling sha at a meeting</span>
+              <div className="blend-container mt-4 max-w-[43.25rem]  text-[1.5rem] font-inter ">
+                We seek to promote b<span>rotherly love and affection as we{' '}</span>
+                fellowship. Serving{' '}
+                G<span>od together with one passion, and knit</span> in love as
+                family. Put a <span>picture of a lovely setting or people</span>  {" "}
+                smiling sha at a meeti<span>ng</span>
               </div>
             </div>
-            <div className="xl:h-[416px] xl:w-[826px]  xl:border-[10px] ">
-              <img src={PNI_Mic} className="xl:h-full xl:w-full xl:px-1 h-[50vh] w-[150vw] xl:object-fill object-cover px-6 " />
+            <div className="xl:h-[38.5rem] xl:w-[70.375rem]  xl:border-[10px]  ">
+              <img src={PNI_Mic} className="xl:h-full xl:w-full xl:px-1 h-[50vh] w-[150vw] xl:object-fill object-cover px-6  " />
             </div>
           </div>
 
-          <div className=" font-mona mx-auto  flex mt-10 xl:w-[800px] flex-col items-center justify-center border-[4px] border-white bg-[#F78E00] p-6 text-white ">
-            <div className="mx-auto max-w-[697px] space-y-4 text-lg xl:text-[1.5rem] ">
+
+          <div className=" font-mona mx-auto  flex mt-10  mb-[10rem] xl:w-[70.375rem] flex-col items-center justify-center border-[0.25rem] border-white bg-[#F78E00] px-[4.6875rem] py-[3.125rem] text-white ">
+            <div className="mx-auto space-y-4 text-[2rem] xl:text-[2rem] ">
               <div>
-                Join Us Every Sunday{' '}
+
+                <span className="font-light">
+
+                  Join Us Every Sunday{' '}
+                </span>
                 <span className="mx-2 font-semibold">
                   9:00am, 10:45am, & 4:30pm
                 </span>
@@ -129,13 +138,11 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="max-h-[100vh] ">
+        <div className="h-[148vh]">
+
           <BottomCTA />
         </div>
-        <div className=" relative top-[97vh] ">
-          <MailingListForm />
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </html>
   );

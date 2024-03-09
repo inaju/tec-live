@@ -63,9 +63,11 @@ function SimpleCarousel({ data }) {
                     },
                 ]}
             >
+                {/* <div className="flex  overflow-auto"> */}
+
 
                 {data && data?.map((item, index) => (
-                    <div className=" xl:min-w-[1100px] cursor-pointer" key={index} >
+                    <div className=" xl:min-w-[1100px] cursor-pointer  mr-[16.9375rem]" key={index} >
                         <CarouselItems
                             imageLocation={item.imageLocation}
                             imageSrc={item.imageSrc}
@@ -74,6 +76,7 @@ function SimpleCarousel({ data }) {
                         />
                     </div>
                 ))}
+                {/* </div> */}
             </ReactSimplyCarousel>
         </div>
     );

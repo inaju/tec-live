@@ -1,21 +1,21 @@
 const CarouselItems = ({ imageLocation, imageSrc, subText, text }) => {
   return (
     <div
-      className="relative 
+      className={`${imageLocation == 'left' ? ' ml-[20rem] ' : ' mr-[20rem]'} relative 
     mt-10 flex xl:w-[800px] w-[300px]  mx-auto  justify-between border-[5px] border-solid
-  border-[rgba(255,114,0,0.20)] p-8 xl:p-14 xl:py-28 min-h-[500px]  "
+  border-[rgba(255,114,0,0.20)] p-8 xl:py-[9.5625rem] xl:px-[3.75rem] min-h-[44.375rem] mb-[16.375rem]  `}
     >
       <CarouselImage imageLocation={imageLocation} imageSrc={imageSrc} />
       <div
-        className={`${imageLocation == 'left' ? ' pl-[14rem] ' : ''} flex w-full flex-col`}
+        className={`${imageLocation == 'left' ? ' pl-[20rem] ' : ''} flex w-full flex-col`}
       >
         <div
-          className="font-mona  max-w-[450px] text-[2.5rem] font-extrabold not-italic leading-[110%] tracking-[1px] text-[color:var(--Dark-back-gorund,#0D0E11)]"
+          className="font-mona  max-w-[38.75rem] text-[3.375rem] font-bold not-italic leading-[110%] tracking-[1px] text-[color:var(--Dark-back-gorund,#0D0E11)]"
         >
           {text}
         </div>
         <div
-          className="font-inter text-md mt-8 max-w-[450px] font-normal not-italic leading-[24px] tracking-[0.24px] text-[color:var(--Grayscale-900,#121519)]"
+          className="font-inter text-[1.5rem] mt-8 max-w-[45rem] font-normal not-italic leading-[24px] tracking-[0.24px] text-[#121519]"
         >
           {subText}
         </div>
@@ -28,16 +28,16 @@ export default CarouselItems;
 
 const getCorrectPosition = (imageLocation) => {
   if (imageLocation == 'right') {
-    return `absolute -right-28 top-6`;
+    return `absolute -right-[20rem] top-[3.9375rem]`;
   }
   if (imageLocation == 'left') {
-    return `absolute -left-28 top-6`;
+    return `absolute -left-[15rem] top-[3.9375rem]`;
   }
 };
 const CarouselImage = ({ imageLocation, imageSrc }) => {
   return (
     <div className={getCorrectPosition(imageLocation)}>
-      <img className=" hidden xl:block xl:h-[430px] xl:min-w-[350px]" src={imageSrc} />
+      <img className=" hidden xl:block xl:h-[45.625rem] xl:max-w-[38rem] " src={imageSrc} />
     </div>
   );
 };

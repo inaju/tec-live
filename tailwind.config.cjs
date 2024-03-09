@@ -5,8 +5,8 @@ module.exports = {
   mode: 'jit', theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/assets/hero.png')",
-        'cta-background-image': `url('/assets/footer_image_overlay.png')`
+        'hero-pattern': "url('/assets/hero_background_image_0.png')",
+        'cta-background-image': `url('/assets/footer_image_overlay_0.png')`
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

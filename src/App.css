@@ -4,12 +4,15 @@
 
 @font-face {
   font-family: "mona";
-  src: url("../public/fonts/mona_sans/Mona-Sans.ttf");
+  src: url("../fonts/mona_sans/TTF/Mona-Sans-BoldWide.ttf");
+  /* src: url("../public/fonts/mona_sans/TTF/Mona-Sans-BoldWide.ttf"); */
 }
 
-
+html{
+  font-size: 11px;
+}
 body{
-  overflow-x:hidden
+  overflow-x:hidden;
 }
 .footer-image {
   width:100%;

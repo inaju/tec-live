@@ -1,9 +1,10 @@
 import React from 'react';
 
-const CustomButton = ({ onClick, text }) => {
+const CustomButton = ({ onClick, text, mode }) => {
+
   return (
     <button
-      className="w-fit rounded-md border bg-[#fff] px-4 py-2 text-[1rem] font-medium"
+      className={`${mode == "black" ? "bg-[#0F0D18] text-[#FFF]" : "bg-[#E8E6E2] text-[#000000]"} font-inter w-fit rounded-md px-[1.25rem] py-[1rem] text-[1rem] font-medium`}
       onClick={onClick}
       type="submit"
     >

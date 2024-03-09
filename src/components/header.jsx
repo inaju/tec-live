@@ -1,11 +1,12 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 
 import { useState } from "react";
+import CustomButton from "./custom-button.jsx"
 
 const headerData = {
   links: [
     {
-      link: '/home',
+      link: '/',
       name: 'Home',
     },
     {
@@ -24,12 +25,14 @@ const headerData = {
       link: '',
       color: '#0F0D18',
       textColor: '#FFFFFF',
+      mode: "black"
     },
     {
       text: 'Contact Us',
       link: '',
       color: '#E8E6E2',
       textColor: '#000000',
+      mode: "light"
     },
   ],
 };
@@ -41,25 +44,22 @@ const HeaderContainer = () => {
   return (
     <nav className="">
       {/* Desktop Navigation */}
-      <div className=" sm:flex hidden w-full items-center justify-between text-[0.85rem]">
+      <div className=" sm:flex hidden w-full items-center justify-between text-[0.85rem] py-[2rem]">
         <div>
           <img className="h-[3.5rem] w-[3.5rem]" src={"/assets/logo.svg"} />
         </div>
-        <div className="flex gap-4 font-semibold text-[#FFFFFF] ">
+        <div className="flex gap-[2.5rem]  text-[#FFFFFF] ">
           {headerData.links.map((item, index) => (
-            <div className="hover:cursor-pointer hover:opacity-55" key={index}>
+            <div className={`hover:cursor-pointer hover:opacity-55 text-[1.25rem] pb-2 ${item.link == window.location.pathname ? 'font-semibold  border-b-[2px]' : 'font-medium'}`} key={index}>
               {item.name}
             </div>
           ))}
         </div>
         <div className="flex gap-4 ">
           {headerData.buttons.map((item, index) => (
-            <div
-              className={`bg-[${item.color}] text-[${item.textColor}] rounded-lg  px-4 py-2 font-semibold hover:cursor-pointer hover:opacity-55 `}
-              key={index}
-            >
-              {item.text}
-            </div>
+            <CustomButton
+              text={item.text} mode={item.mode}
+            />
           ))}
         </div>
       </div>
@@ -71,8 +71,8 @@ const HeaderContainer = () => {
           <img className="object-contain w-[24px] h-[24px] absolute top-4 left-4" src={"/assets/logo.svg"} />
         </div>
         {toggle ? <CloseIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4 text-[#0F0D18]"
-          onClick={() => setToggle(!toggle)} /> : <MenuIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4 text-[#0F0D18]"
-          onClick={() => setToggle(!toggle)} />}
+          onClick={() => setToggle(!toggle)} /> : <MenuIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4"
+            onClick={() => setToggle(!toggle)} />}
 
 
         {/* Sidebar */}
@@ -88,7 +88,7 @@ const HeaderContainer = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col gap-4 mt-10  ">
+            <div className="flex flex-col gap-4 mt-10">
               {headerData.buttons.map((item, index) => (
                 <div
                   className={`border flex items-center justify-center py-2 w-full bg-[${item.color}] text-[${item.textColor}] rounded-lg   font-semibold hover:cursor-pointer hover:opacity-55 `}
