@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/assets/hero_background_image_0.png')",
+        'hero-pattern': "url('/assets/hero_background_image_0-min.png')",
         'about-hero-pattern': "url('/assets/hero_background_image_2.png')",
         'sermons-hero-pattern': "url('/assets/hero_background_image_3.png')",
         'cta-background-image': `url('/assets/footer_image_overlay_0.png')`
