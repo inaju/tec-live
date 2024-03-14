@@ -6,7 +6,7 @@ import CustomInput from './custom-input.jsx';
 
 const BottomCTA = () => {
   return (
-    <div className="relative border  border-red-300 ">
+    <div className="relative ">
       <div
         className=" bg-cta-background-image bg-no-repeat xl:bg-[length:100vw_150vh] px-10 xl:px-0  absolute right-0 top-0 mx-auto flex h-[200vh] w-screen flex-col items-left xl:items-center justify-center"
       >

@@ -1,56 +1,40 @@
-# Starter Kit for Vite, React, TypeScript, Tailwind and Node.js ESM
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-_Minimal, sensible defaults, fast._
+## Getting Started
 
-Read [the blog post about this template](https://cpojer.net/posts/fastest-frontend-tooling-in-2022).
+First, run the development server:
 
-## Technologies
-
-- [Vite](https://vitejs.dev/)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org)
-- [Tailwind](https://tailwindcss.com/)
-- [pnpm](https://pnpm.io/ja/) (_Optional_)
-
-![screenshot of `App.tsx`](./screenshot.png)
-
-## Setup
-
-- Press the "Use this template" on the top of this repository's GitHub page.
-- Run `pnpm install` (or `npm install` if you don't use `pnpm`).
-- `pnpm dev` for development.
-- Use `pnpm test` to run tests.
-- `pnpm build` for production builds.
-
-_Note: You can install `pnpm` via `homebrew` on macOS: `brew install pnpm`._
-
-## Protips for the fastest Developer Experience
-
-- Use [`npm-run-all`](https://github.com/mysticatea/npm-run-all) to parallelize local test runs.
-- Prettier and eslint have `--cache` flags. Use them!
-- Do not run prettier inside of `eslint`. It commonly takes 50% of the eslint runtime!
-- Automatically sort imports when running prettier/saving the document via [`@ianvs/prettier-plugin-sort-imports`](https://github.com/ianvs/prettier-plugin-sort-imports).
-- Use `swc` with `ts-node` for fast node scripts with [ESM](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/). See below ↓
-
-## Run node scripts with ESM and TypeScript, fast.
-
-Create a `script.ts` file, run `chmod x script.ts` and execute it via `./script.ts`.
-
-```
-#!/usr/bin/env node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm
-
-console.log('Your code goes here.');
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Use this to restart your scripts instantly when a file changes:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
-#!/usr/bin/env NODE_ENV=development node --watch --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-console.log('This processes instantly restarts when a file changes.');
-```
-# tec-live
-# tec-live
-# tec-live
-# tec-live
-# tec-live
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
