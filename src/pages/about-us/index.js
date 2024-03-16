@@ -72,6 +72,35 @@ const AboutUs = () => {
 
                 </div>
             </div>
+
+            <div className=" bg-[#E8E6E2] py-[14.375rem] ">
+                <div className="relative flex items-center justify-center gap-[2.5rem] max-w-[80.1875rem] mx-auto">
+
+                    <div className="bg-[white] border h-[16.9375rem] w-[28.25rem] absolute -z-10 left-0 top-0"></div>
+                    <div>
+                        <div className="blend-container text-[3.375rem] font-mona leading-[4.375rem] absolute top-[2.6875rem] left-[-3%] ">
+
+                            Meet <span>Our</span> <br />Lead  <span>Pastor</span>
+                        </div>
+                        <div>
+                            <img src="/assets/pastor-1.png" className='h-[36.6875rem] w-[31.625rem] ' />
+
+                        </div>
+                    </div>
+
+                    <div className="max-w-[32.4375rem] ">
+                        <TextComponent
+                            mode="heading-1"
+                            className="mt-[1.875rem] !text-[#16181E] border-b-8 border-[#F78E00]"
+                            text="Pastor Nelson" />
+
+                        <TextComponent
+                            mode="paragraph-2"
+                            className="mt-[1.875rem] !text-[1.25rem] !text-left !text-[#121519] leading-[1.875rem]"
+                            text="Pastor Nelson Iheagwam is a believer passionate about men coming to the truth of salvation, growing in the same and walking in the fullness of the plans and purposes of God for them. He is passionate about Apologetics, the things of the spirit, accurate teaching of God’s word and fervor seen in the heart and acts of the believer. With meetings under his belt, it is a testimony of his ministry that many have been undoubtedly touched by the power of the Spirit and fervor ignited in the heart of much more. It is his ultimate vision that men in their multitude be saved, trained and sent to duplicate the former in the lives of others as has been in theirs." />
+                    </div>
+                </div>
+            </div>
             <div className=" h-[148vh]">
 
                 <BottomCTA />
