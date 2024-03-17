@@ -3,6 +3,7 @@
 import { useState } from "react";
 import CustomButton from "./custom-button.jsx"
 import Link from 'next/link'
+import { usePathname } from "next/navigation.js";
 
 const headerData = {
   links: [
@@ -41,7 +42,7 @@ const headerData = {
 const HeaderContainer = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-
+  const pathname = usePathname()
   return (
     <nav className="">
       {/* Desktop Navigation */}
@@ -55,7 +56,9 @@ const HeaderContainer = () => {
           {headerData.links.map((item, index) => (
             <div className={`hover:cursor-pointer hover:opacity-55 text-[1.25rem] pb-2`} key={index}>
               {/* <div className={`hover:cursor-pointer hover:opacity-55 text-[1.25rem] pb-2 ${item.link == window?.location?.pathname ? 'font-semibold  border-b-[2px]' : 'font-medium'}`} key={index}> */}
-              <Link href={item?.link}>{item.name}</Link>
+              <Link
+                className={`hover:cursor-pointer hover:opacity-55 text-[1.25rem] pb-2 ${item.link == pathname ? 'font-semibold  border-b-[2px]' : 'font-medium'}`}
+                href={item?.link}>{item.name}</Link>
             </div>
           ))}
         </div>
