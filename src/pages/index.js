@@ -63,7 +63,7 @@ const carouselItemDataLeft = [
 
 export default function Home() {
   return (
-    <div className="relative ">
+    <div className="relative">
       <div className="">
         <Hero />
       </div>

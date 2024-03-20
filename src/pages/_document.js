@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" className="text-[10px] lg:text-[11px]">
       <Head>
         <link href="https://fonts.googleapis.com"
           rel="preconnect" />
@@ -17,8 +17,7 @@ export default function Document() {
           TEC-The Equipping Church Global
         </title>
       </Head>
-      <body>
-
+      <body className="border-2 border-black">
         <Main />
         <NextScript />
       </body>

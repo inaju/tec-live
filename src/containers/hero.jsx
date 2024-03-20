@@ -6,17 +6,17 @@ import CustomButton from '../components/custom-button.jsx';
 const Hero = () => {
   return (
     <div>
-      <div className="relative w-screen bg-no-repeat bg-[-10px_-1rem] xl:h-[112.5rem] 2xl:bg-[length:100vw_140.5rem] xl:bg-[length:100vw_120.5rem] bg-hero-pattern">
-        <div className="mx-auto  xl:max-w-[68%] pt-4 ">
+      <div className="text-[14px] relative w-screen bg-no-repeat bg-[-1.25rem_-1rem] md:bg-[-0.625rem_-1rem] bg-[length:110vw_110.4375rem] h-[112.5rem] xl:h-[112.5rem] 2xl:bg-[length:100vw_140.5rem] xl:bg-[length:100vw_120.5rem] bg-mobile-hero-pattern md:bg-hero-pattern">
+        <div className="mx-auto xl:max-w-[68%] pt-4 ">
           <HeaderContainer />
-          <div className="mt-[40%] xl:mt-[22rem] px-10 xl:px-0 flex flex-col items-left xl:items-center gap-4">
+          <div className="mt-[374px] md:mt-[40%] xl:mt-[22rem] mx-[12px] xl:px-0 flex flex-col items-center gap-4">
             <div className="">
               <TextComponent text={"We See Men In Their Multitude Saved, Trained, And Sent"} mode="heading-1" />
               <TextComponent
-                className="mt-[2rem]"
+                className="mt-[1rem] xl:mt-[2rem]"
                 text={" We envision all men everywhere fullfilling and walking in the fullness of God’s plan for their lives."} mode="paragraph-1" />
             </div>
-            <div className="flex flex-col xl:flex-row gap-3 xl:mt-[3.375rem] mt-10">
+            <div className="flex w-full lg:w-fit lg:flex-col xl:flex-row gap-3 mt-[2.25rem] xl:mt-[3.375rem]">
               <CustomButton
                 text={" Learn More"} mode={"black"}
               />
