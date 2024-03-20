@@ -17,7 +17,7 @@ export default function Document() {
           TEC-The Equipping Church Global
         </title>
       </Head>
-      <body className="border-2 border-black">
+      <body className="">
         <Main />
         <NextScript />
       </body>

@@ -77,13 +77,13 @@ const HeaderContainer = () => {
         <div>
           <img className="object-contain w-[24px] h-[24px] absolute top-4 left-4" src={"/assets/logo.svg"} />
         </div>
-        {toggle ? <CloseIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4 text-[#0F0D18]"
+        {toggle ? <CloseIcon className="object-contain w-[24px] h-[24px] absolute top-3 right-4 text-[#0F0D18]"
           onClick={() => setToggle(!toggle)} /> : <MenuIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4"
             onClick={() => setToggle(!toggle)} />}
         {/* Sidebar */}
         <div
           className={`${!toggle ? "hidden" : "flex"
-            } p-6 bg-[#0F0D18] fixed z-10 top-12 right-0 left-0  w-screen h-screen sidebar`}
+            } p-6 bg-[#0F0D18] fixed z-10 top-16 right-0 left-0  w-screen h-screen sidebar`}
         >
           <ul className="list-none flex flex-1 flex-col ">
             <div className="flex flex-col gap-4 font-semibold text-[#FFFFFF] ">

@@ -23,7 +23,6 @@ function SimpleCarousel({ data }) {
                 onRequestChange={setActiveSlideIndex}
                 speed={100}
                 forwardBtnProps={{
-                    //here you can also pass className, or any other button element attributes
                     style: {
                         alignSelf: 'center',
                         background: 'black',
@@ -40,7 +39,6 @@ function SimpleCarousel({ data }) {
                     children: <span className="font-mona">{`>`}</span>,
                 }}
                 backwardBtnProps={{
-                    //here you can also pass className, or any other button element attributes
                     style: {
                         alignSelf: 'center',
                         background: 'black',
@@ -56,7 +54,6 @@ function SimpleCarousel({ data }) {
                 }}
                 responsiveProps={[
                     {
-                        // border: '1px solid red',
                         itemsToScroll: 1,
                         itemsToShow: 1,
                         minWidth: 120,

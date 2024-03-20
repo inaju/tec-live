@@ -2,7 +2,7 @@ const TextComponent = ({ text, mode, className }) => {
     return (
         <div>
             {mode == "heading-1" &&
-                <h1 className={`font-mona text-center text-[32px] xl:text-[4rem] font-extrabold not-italic leading-[110%] tracking-[0.125rem] text-[color:var(--White,#FFF)] ${className}`}>
+                <h1 className={`font-mona text-center text-[32px] xl:text-[4rem] font-extrabold not-italic leading-[110%] lg:tracking-[0.125rem] text-[color:var(--White,#FFF)] ${className}`}>
                     {text}
                 </h1>
             }
