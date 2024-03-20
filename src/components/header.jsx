@@ -15,10 +15,10 @@ const headerData = {
       name: 'About Us',
       link: '/about-us',
     },
-    {
-      name: 'Sermons',
-      link: '/sermons',
-    },
+    // {
+    //   name: 'Sermons',
+    //   link: '/sermons',
+    // },
   ],
   logo: './src/assets/logo.svg',
   buttons: [
