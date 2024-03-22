@@ -7,15 +7,14 @@ const carouselItemDataRight = [
   {
     imageLocation: 'right',
     imageSrc: 'assets/carousel_image_1.png',
-    subText:
-      'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
+    mobileImageSrc: 'assets/mobile_carousel_image_1.png',
+    subText: 'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
     text: 'Spreading the Knowledge of God in Every Place',
   },
   {
     imageLocation: 'right',
     imageSrc: 'assets/carousel_image_1.png',
-    subText:
-      'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
+    subText: 'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
     text: 'Second Carousel',
   },
   {
@@ -32,15 +31,15 @@ const carouselItemDataRight = [
       'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
     text: 'Third Carousel',
   },
-
 ];
+
 
 const carouselItemDataLeft = [
   {
     imageLocation: 'left',
     imageSrc: 'assets/carousel_image_2.png',
-    subText:
-      'Through teachings and active discipleship, we are committed to raising faithful men who are sound in truth, able to give a defence for the faith and will be able to teach others also. ',
+    mobileImageSrc: 'assets/mobile_carousel_image_2.png',
+    subText: 'Through teachings and active discipleship, we are committed to raising faithful men who are sound in truth, able to give a defence for the faith and will be able to teach others also. ',
     text: 'Reaching The Unsaved',
   },
   {
@@ -64,7 +63,7 @@ const carouselItemDataLeft = [
 export default function Home() {
   return (
     <div className="relative">
-      <div className="">
+      <div>
         <Hero />
       </div>
       <div className="bg-[#E8E6E2] pb-24 pt-40 ">
@@ -72,13 +71,13 @@ export default function Home() {
           <SimpleCarousel data={carouselItemDataRight} />
           <SimpleCarousel data={carouselItemDataLeft} />
         </div>
-        <div className=" relative mx-auto flex flex-col items-center justify-center py-20 max-w-[1200px] ">
+        <div className=" relative mx-auto flex flex-col items-center justify-center py-2 max-w-[1200px] ">
           {/* {"mobile"} */}
           <div className=" xl:hidden px-6 pb-8">
-            <div className="font-mona blend-container text-[40px] text-3xl font-extrabold lg:font-bold  leading-[55px] lg:leading-[2.5rem]">
+            <div className="font-mona blend-container text-[40px] text-3xl font-extrabold lg:font-bold  leading-[45px] lg:leading-[2.5rem]">
               A Family Bound Together With Love
             </div>
-            <div className="blend-container mt-[16px] lg:mt-4 max-w-[500px] text-[24px] lg:text-[1rem] font-inter ">
+            <div className="blend-container mt-[16px] lg:mt-4 max-w-[500px] text-[16px] lg:text-[1rem] font-inter ">
               We seek to promote brotherly love and affection as we{' '}
               fellowship. Serving{' '}
               God together with one passion, and knit in love as
@@ -106,12 +105,10 @@ export default function Home() {
         </div>
 
 
-        <div className=" font-mona mx-auto  flex mt-10  mb-[10rem] xl:w-[70.375rem] flex-col items-center justify-center border-[0.25rem] border-white bg-[#F78E00] px-[4.6875rem] py-[3.125rem] text-white ">
+        <div className=" font-mona max-w-[94%] mx-auto px-8  flex mt-10  mb-[10rem] xl:w-[70.375rem] flex-col items-center justify-center border-[0.25rem] border-white bg-[#F78E00] lg:px-[4.6875rem] py-[3.125rem] text-white ">
           <div className="mx-auto space-y-4 text-[2rem] xl:text-[2rem] ">
             <div>
-
               <span className="font-light">
-
                 Join Us Every Sunday{' '}
               </span>
               <span className="mx-2 font-semibold">

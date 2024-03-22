@@ -18,6 +18,7 @@ function SimpleCarousel({ data }) {
             <div className="xl:max-w-[1110px] cursor-pointer  mx-auto"  >
                 <CarouselItems
                     imageLocation={data[0].imageLocation}
+                    mobileImageSrc={data[0].mobileImageSrc}
                     imageSrc={data[0].imageSrc}
                     subText={data[0].subText}
                     text={data[0].text}
