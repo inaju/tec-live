@@ -15,7 +15,15 @@ function SimpleCarousel({ data }) {
     // }, [data, activeSlideIndex])
     return (
         <div>
-            <ReactSimplyCarousel
+            <div className="xl:max-w-[1110px] cursor-pointer  mx-auto"  >
+                <CarouselItems
+                    imageLocation={data[0].imageLocation}
+                    imageSrc={data[0].imageSrc}
+                    subText={data[0].subText}
+                    text={data[0].text}
+                />
+            </div>
+            {/* <ReactSimplyCarousel
                 activeSlideIndex={activeSlideIndex}
                 infinite={true}
                 itemsToScroll={1}
@@ -60,9 +68,6 @@ function SimpleCarousel({ data }) {
                     },
                 ]}
             >
-                {/* <div className="flex  overflow-auto"> */}
-
-
                 {data && data?.map((item, index) => (
                     <div className=" xl:min-w-[1100px] cursor-pointer  mr-[16.9375rem]" key={index} >
                         <CarouselItems
@@ -73,8 +78,7 @@ function SimpleCarousel({ data }) {
                         />
                     </div>
                 ))}
-                {/* </div> */}
-            </ReactSimplyCarousel>
+            </ReactSimplyCarousel> */}
         </div>
     );
 }

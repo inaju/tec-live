@@ -75,7 +75,7 @@ const HeaderContainer = () => {
       {/* Mobile Navigation */}
       <div className={`${toggle ? "bg-white" : ""} sm:hidden flex items-center top-[0px] left-0 fixed  w-screen h-[54px]`}>
         <div>
-          <img className="object-contain w-[24px] h-[24px] absolute top-4 left-4" src={"/assets/logo.svg"} />
+          <img className="object-contain w-[4.125rem] h-[4.125rem] absolute top-4 left-4" src={"/assets/logo.svg"} />
         </div>
         {toggle ? <CloseIcon className="object-contain w-[24px] h-[24px] absolute top-3 right-4 text-[#0F0D18]"
           onClick={() => setToggle(!toggle)} /> : <MenuIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4"

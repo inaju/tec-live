@@ -67,23 +67,23 @@ export default function Home() {
       <div className="">
         <Hero />
       </div>
-      <div className="bg-[#E8E6E2] pb-24 pt-40">
-        <div className="flex flex-col gap-28">
+      <div className="bg-[#E8E6E2] pb-24 pt-40 ">
+        <div className="flex flex-col lg:gap-28 space-y-[320px] lg:space-y-[0px] mb-[300px] max-w-[94%] mx-auto">
           <SimpleCarousel data={carouselItemDataRight} />
           <SimpleCarousel data={carouselItemDataLeft} />
         </div>
         <div className=" relative mx-auto flex flex-col items-center justify-center py-20 max-w-[1200px] ">
           {/* {"mobile"} */}
           <div className=" xl:hidden px-6 pb-8">
-            <div className="font-mona blend-container text-3xl font-bold leading-[2.5rem]">
+            <div className="font-mona blend-container text-[40px] text-3xl font-extrabold lg:font-bold  leading-[55px] lg:leading-[2.5rem]">
               A Family Bound Together With Love
             </div>
-            <div className="blend-container mt-4 max-w-[500px] text-[1rem] font-inter ">
+            <div className="blend-container mt-[16px] lg:mt-4 max-w-[500px] text-[24px] lg:text-[1rem] font-inter ">
               We seek to promote brotherly love and affection as we{' '}
               fellowship. Serving{' '}
               God together with one passion, and knit in love as
               family. Put a picture of a lovely setting or people
-              smiling sha at a meeting
+              smiling sha at a meeting.
             </div>
           </div>
           {/* {"desktop"} */}
