@@ -71,9 +71,9 @@ export default function Home() {
           <SimpleCarousel data={carouselItemDataRight} />
           <SimpleCarousel data={carouselItemDataLeft} />
         </div>
-        <div className=" relative mx-auto flex flex-col items-center justify-center py-2 max-w-[1200px] ">
+        <div className=" relative mx-auto flex flex-col items-center justify-center py-2  max-w-[94%] lg:max-w-[1200px] ">
           {/* {"mobile"} */}
-          <div className=" xl:hidden px-6 pb-8">
+          <div className=" xl:hidden  border  lg:px-6 pb-8">
             <div className="font-mona blend-container text-[40px] text-3xl font-extrabold lg:font-bold  leading-[45px] lg:leading-[2.5rem]">
               A Family Bound Together With Love
             </div>
@@ -99,13 +99,14 @@ export default function Home() {
               smiling sha at a meeti<span>ng</span>
             </div>
           </div>
-          <div className="xl:h-[38.5rem] xl:w-[70.375rem]  xl:border-[10px]  ">
-            <img src={'/assets/PNI-mic.png'} className="xl:h-full xl:w-full xl:px-1 h-[50vh] w-[150vw] xl:object-fill object-cover px-6  " />
+          <div className=" xl:h-[38.5rem] xl:w-[70.375rem]  xl:border-[10px]  ">
+
+            <img src={'/assets/PNI-mic.png'} className=" w-[380px] h-[220px] xl:h-full xl:w-full xl:px-1  xl:object-fill object-fill lg:object-cover lg:px-6  " />
           </div>
         </div>
 
 
-        <div className=" font-mona max-w-[94%] mx-auto px-8  flex mt-10  mb-[10rem] xl:w-[70.375rem] flex-col items-center justify-center border-[0.25rem] border-white bg-[#F78E00] lg:px-[4.6875rem] py-[3.125rem] text-white ">
+        <div className=" font-mona max-w-[94%] mx-auto px-8 flex mt-10  mb-[10rem] xl:w-[70.375rem] flex-col items-center justify-center border-[0.35rem] border-white bg-[#F78E00] lg:px-[4.6875rem] py-[3.125rem] text-white ">
           <div className="mx-auto space-y-4 text-[2rem] xl:text-[2rem] ">
             <div>
               <span className="font-light">
