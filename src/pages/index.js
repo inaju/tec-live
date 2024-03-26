@@ -67,7 +67,7 @@ export default function Home() {
         <Hero />
       </div>
       <div className="bg-[#E8E6E2] pb-24 pt-40 ">
-        <div className="flex flex-col lg:gap-28 space-y-[320px] lg:space-y-[0px] mb-[300px] max-w-[94%] mx-auto">
+        <div className="flex flex-col lg:gap-28 space-y-[320px] lg:space-y-[0px] mb-[300px] lg:mb-[80px] max-w-[94%] mx-auto">
           <SimpleCarousel data={carouselItemDataRight} />
           <SimpleCarousel data={carouselItemDataLeft} />
         </div>
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
           {/* {"desktop"} */}
 
-          <div className="absolute left-[5%]  top-[10.0625rem] hidden xl:block ">
+          <div className="absolute left-[4.1%]  top-[10.0625rem] hidden xl:block ">
             <div className="font-mona blend-container max-w-[46.9375rem] text-[32px] lg:text-[4rem] font-bold leading-[5rem]">
               A Fami<span>ly Bound</span> Togeth<span>er With Love</span>
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
               smiling sha at a meeti<span>ng</span>
             </div>
           </div>
-          <div className=" xl:h-[38.5rem] xl:w-[70.375rem]  xl:border-[10px]  ">
+          <div className=" xl:h-[38.5rem]">
 
             <img src={'/assets/PNI-mic.png'} className=" w-[380px] h-[220px] xl:h-full xl:w-full xl:px-1  xl:object-fill object-fill lg:object-cover lg:px-6  " />
           </div>
@@ -125,11 +125,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[148vh]">
+      <div className=" h-[240vh] mb-10 bg-[#121519]">
 
         <BottomCTA />
       </div>
-      <Footer />
     </div>
   );
 }
