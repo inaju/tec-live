@@ -88,10 +88,10 @@ export default function Home() {
           {/* {"desktop"} */}
 
           <div className="absolute left-[5%]  top-[10.0625rem] hidden xl:block ">
-            <div className="font-mona blend-container max-w-[46.9375rem] text-[4rem] font-bold leading-[5rem]">
+            <div className="font-mona blend-container max-w-[46.9375rem] text-[32px] lg:text-[4rem] font-bold leading-[5rem]">
               A Fami<span>ly Bound</span> Togeth<span>er With Love</span>
             </div>
-            <div className="blend-container mt-4 max-w-[43.25rem]  text-[1.5rem] font-inter ">
+            <div className="blend-container mt-4 max-w-[43.25rem] text-[1.5rem] font-inter ">
               We seek to promote b<span>rotherly love and affection as we{' '}</span>
               fellowship. Serving{' '}
               G<span>od together with one passion, and knit</span> in love as

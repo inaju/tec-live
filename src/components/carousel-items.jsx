@@ -5,8 +5,7 @@ const CarouselItems = ({ imageLocation, imageSrc, subText, text, mobileImageSrc 
     mb-[180px] flex lg:flex-row flex-col-reverse xl:w-[800px] lg:w-[300px] pb-[100px] lg:pb-[0px] mx-auto  justify-between border-[5px] border-solid
   border-[rgba(255,114,0,0.20)] p-8 xl:py-[9.5625rem] xl:px-[3.75rem] min-h-[44.375rem] lg:mb-[16.375rem]`}>      <CarouselImage imageLocation={imageLocation} imageSrc={imageSrc} mobileImageSrc={mobileImageSrc} />
       <div className={`${imageLocation == 'left' ? ' lg:pl-[20rem] ' : ''} flex w-full flex-col`}>
-        <div
-          className="font-mona  max-w-[38.75rem] text-[40px] lg:text-[3.375rem] font-bold not-italic leading-[110%] tracking-[1px] text-[color:var(--Dark-back-gorund,#0D0E11)]">
+        <div className="font-mona  max-w-[38.75rem] text-[33px] lg:text-[3.375rem] font-bold not-italic leading-[120%] tracking-[1px] text-[color:var(--Dark-back-gorund,#0D0E11)]">
           {text}
         </div>
         <div
