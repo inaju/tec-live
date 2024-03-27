@@ -18,22 +18,22 @@ const Hero = () => {
                 text={" We envision all men everywhere fullfilling and walking in the fullness of God’s plan for their lives."} mode="paragraph-1" />
             </div>
             <div className="flex w-full lg:w-fit lg:flex-col xl:flex-row gap-3 mt-[2.25rem] xl:mt-[3.375rem]">
-              <Link href={"/about-us"}>
-                <CustomButton
-                  text={" Learn More"} mode={"black"}
-                />
-              </Link>
+              <CustomButton
+                link={"/about-us"}
 
-              <Link href={"https://t.me/nelsoniheagwam"}>
-                <CustomButton
-                  className="hidden lg:block"
-                  text={"Check Out our latest sermon"} mode={"light"}
-                />
-                <CustomButton
-                  className="lg:hidden block"
-                  text={"Our latest sermon"} mode={"light"}
-                />
-              </Link>
+                text={" Learn More"} mode={"black"}
+              />
+
+              <CustomButton
+                link={"https://t.me/nelsoniheagwam"}
+                className="hidden lg:block"
+                text={"Check Out our latest sermon"} mode={"light"}
+              />
+              <CustomButton
+                link={"https://t.me/nelsoniheagwam"}
+                className="!w-full lg:hidden block"
+                text={"Our latest sermon"} mode={"light"}
+              />
             </div>
           </div>
           <div className="flex flex-col gap-4 mt-[64px] xl:mt-24 xl:px-0 xl:flex-row justify-center xl:bg-transparent lg:bg-[#0F0D18] xl:pt-0 pt-20 pb-10 ">

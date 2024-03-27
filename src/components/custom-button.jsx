@@ -1,6 +1,7 @@
 import React from 'react';
+import Link from 'next/link'
 
-const CustomButton = ({ onClick, text, mode, className }) => {
+const CustomButton = ({ onClick, text, mode, className, link }) => {
 
   return (
     <button
@@ -8,7 +9,14 @@ const CustomButton = ({ onClick, text, mode, className }) => {
       onClick={onClick}
       type="submit"
     >
-      {text}
+      {link ?
+        <Link href={link}>
+          {text}
+        </Link> :
+        <>
+          {link}
+        </>
+      }
     </button>
   );
 };
