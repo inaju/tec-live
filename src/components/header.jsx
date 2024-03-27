@@ -75,13 +75,12 @@ const HeaderContainer = () => {
       </div>
       {/*End Desktop Navigation */}
       {/* Mobile Navigation */}
-      <div className={`${toggle ? "bg-white" : " backdrop-blur-xl backdrop-filter"} z-[1000rem] sm:hidden flex items-center top-[0px] left-0 fixed  w-screen h-[54px]`}>
+      <div className={`${toggle ? "bg-white" : " backdrop-blur-xl backdrop-filter"} z-[1000rem] sm:hidden flex items-center top-[0px] left-0 fixed  w-screen h-[64px] `}>
         <Link href="/">
-
           <img className="object-contain w-[4.125rem] h-[4.125rem] absolute top-4 left-4" src={"/assets/logo.svg"} />
         </Link>
-        {toggle ? <CloseIcon className="object-contain w-[24px] h-[24px] absolute top-3 right-4 text-[#0F0D18]"
-          onClick={() => setToggle(!toggle)} /> : <MenuIcon className="text-white object-contain w-[24px] h-[24px] absolute top-4 right-4"
+        {toggle ? <CloseIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4 text-[#0F0D18]"
+          onClick={() => setToggle(!toggle)} /> : <MenuIcon className="text-white object-contain w-[3.2rem] h-[4rem] absolute top-4 right-4"
             onClick={() => setToggle(!toggle)} />}
         {/* Sidebar */}
         <div

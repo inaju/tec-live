@@ -6,13 +6,13 @@ import TextComponent from '@/components/text'
 const ContactPage = () => {
     return (
         <div className="bg-[#121519]">
-            <div className="text-[14px] relative w-screen bg-no-repeat bg-[-10.25rem_-0.4rem] md:bg-[-8.625rem_-10rem] bg-[length:140vw_155.4375rem] h-[135.5rem]  2xl:bg-[length:100vw_140.5rem] xl:bg-[length:110vw_120.5rem] bg-mobile-contact-hero-pattern md:bg-contact-hero-pattern">
+            <div className="text-[14px] relative w-screen bg-no-repeat bg-[-7.25rem_-0.4rem]  md:bg-[-10.25rem_-0.4rem] bg-[length:140vw_155.4375rem] h-[135.5rem]  2xl:bg-[length:100vw_140.5rem] xl:bg-[length:110vw_120.5rem] bg-mobile-contact-hero-pattern md:bg-contact-hero-pattern">
                 <div
                     className='mx-auto  xl:max-w-[68%] max-w-[94%]'
                 >
                     <div>
                         <HeaderContainer />
-                        <div className='mx-auto max-w-[550px] flex flex-col gap-[1.875rem] mt-[20.3125rem]'>
+                        <div className='mx-auto max-w-[550px] flex flex-col gap-[1.875rem] pt-[382px] lg:pt-[20.3125rem]'>
                             <TextComponent
                                 mode="heading-1"
                                 className=""
@@ -21,7 +21,7 @@ const ContactPage = () => {
                                 mode="paragraph-1"
                                 className="!text-[1.25rem]"
                                 text="We're available Monday to Friday 9am – 6pm and on Saturday to Sunday 10am - 4pm, You can also reach us online via instagram and facebook" />
-                            <div className='flex gap-6 mx-auto'>
+                            <div className='flex lg:flex-row flex-col gap-6 mx-auto'>
                                 <div className='flex gap-2 mx-auto '>
                                     <div className='text-[#C4C4C4] text-[1.5rem]'>
                                         Mobile:
@@ -52,12 +52,12 @@ const ContactPage = () => {
                             </div>
                             <CustomInput className={"!h-[7.5rem]"} placeholderText={"Enter your message"} />
 
-                            <button className="bg-[#E8E6E2] py-[8px]  text-[16px] xl:text-[1.125rem] text-black w-fit font-medium px-[10.5rem] rounded-md">
+                            <button className="bg-[#E8E6E2] py-[8px]  text-[16px] xl:text-[1.125rem] text-black w-full lg:w-fit font-medium px-[10.5rem] rounded-md">
                                 Send</button>
                         </form>
 
                     </div>
-                    <div className="  pb-30">
+                    <div className=" bg-[#121519] h-[90vh] pb-30">
 
 
                         <div className=" mx-auto  xl:max-w-[68%] max-w-[94%] flex flex-col  gap-12 items-start sm:flex-row justify-between  lg:mx-auto">

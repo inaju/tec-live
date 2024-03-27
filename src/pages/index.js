@@ -125,7 +125,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="border border-red-600 h-[350vh] lg:h-[250vh] bg-[#121519]">
+      <div className=" h-[350vh] lg:h-[250vh] bg-[#121519]">
 
         <BottomCTA />
       </div>
