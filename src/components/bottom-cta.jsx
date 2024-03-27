@@ -1,9 +1,7 @@
 import React from 'react';
-// import big_footer_image from '../assets/footer_image_overlay.png';
 import CustomButton from './custom-button';
 import CustomInput from './custom-input.jsx';
-import Footer from './footer';
-// import MailingListForm from './mailing-list-form.jsx';
+import Link from 'next/link';
 
 const BottomCTA = () => {
   return (
@@ -23,9 +21,11 @@ const BottomCTA = () => {
             Christ, with Joy.
           </div>
           <div className="mt-10  ">
+            <Link href={"http://paypal.me/niheagwam"}>
             <CustomButton
               className="!px-[1.6rem]"
               text="Give Now" />
+              </Link>
           </div>
         </div>
         <div className="mx-auto  flex flex-col gap-10 lg:gap-10 justify-center items-center w-full lg:w-[screen] lg:p-20 ">
@@ -40,6 +40,7 @@ const BottomCTA = () => {
           </form>
 
         </div>
+
         <div className=" flex flex-col  gap-12 items-start mx-1 sm:flex-row justify-between  lg:mx-auto  mt-10 mb-20 ">
 
           <div className='w-[29.25rem] '>
@@ -77,12 +78,12 @@ const BottomCTA = () => {
 export default BottomCTA;
 
 
-const FooterItem = ({ text }) => {
+export const FooterItem = ({ text }) => {
   return (
     <p><a className="font-inter leading-[32px] font-normal inline-flex lg:text-[1.5rem] text-[24px]  gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">{text}</a></p>
   )
 }
-const FooterHeader = ({ text }) => {
+export const FooterHeader = ({ text }) => {
   return (
     <h4 className="font-mona text-[32px] lg:text-[2rem] mb-[1.25rem] text-gray-900 uppercase dark:text-gray-100">{text}</h4>
   )

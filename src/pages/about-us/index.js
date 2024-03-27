@@ -1,8 +1,6 @@
 import BottomCTA from '@/components/bottom-cta'
-import Footer from '@/components/footer'
 import HeaderContainer from '@/components/header'
 import TextComponent from '@/components/text'
-import React from 'react'
 
 const AboutUs = () => {
     return (

@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderContainer from '../components/header.jsx';
 import TextComponent from '../components/text.jsx';
 import CustomButton from '../components/custom-button.jsx';
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -17,17 +18,22 @@ const Hero = () => {
                 text={" We envision all men everywhere fullfilling and walking in the fullness of God’s plan for their lives."} mode="paragraph-1" />
             </div>
             <div className="flex w-full lg:w-fit lg:flex-col xl:flex-row gap-3 mt-[2.25rem] xl:mt-[3.375rem]">
-              <CustomButton
-                text={" Learn More"} mode={"black"}
-              />
-              <CustomButton
-                className="hidden lg:block"
-                text={"Check Out our latest sermon"} mode={"light"}
-              />
-              <CustomButton
-                className="lg:hidden block"
-                text={"Our latest sermon"} mode={"light"}
-              />
+              <Link href={"/about-us"}>
+                <CustomButton
+                  text={" Learn More"} mode={"black"}
+                />
+              </Link>
+
+              <Link href={"https://t.me/nelsoniheagwam"}>
+                <CustomButton
+                  className="hidden lg:block"
+                  text={"Check Out our latest sermon"} mode={"light"}
+                />
+                <CustomButton
+                  className="lg:hidden block"
+                  text={"Our latest sermon"} mode={"light"}
+                />
+              </Link>
             </div>
           </div>
           <div className="flex flex-col gap-4 mt-[64px] xl:mt-24 xl:px-0 xl:flex-row justify-center xl:bg-transparent lg:bg-[#0F0D18] xl:pt-0 pt-20 pb-10 ">

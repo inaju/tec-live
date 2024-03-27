@@ -1,9 +1,9 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 
-import { useState } from "react";
-import CustomButton from "./custom-button.jsx"
-import Link from 'next/link'
+import Link from 'next/link';
 import { usePathname } from "next/navigation.js";
+import { useState } from "react";
+import CustomButton from "./custom-button.jsx";
 
 const headerData = {
   links: [
@@ -24,14 +24,14 @@ const headerData = {
   buttons: [
     {
       text: 'Partner',
-      link: '',
+      link: 'http://paypal.me/niheagwam',
       color: '#0F0D18',
       textColor: '#FFFFFF',
       mode: "black"
     },
     {
       text: 'Contact Us',
-      link: '',
+      link: '/contact',
       color: '#E8E6E2',
       textColor: '#000000',
       mode: "light"
@@ -64,10 +64,12 @@ const HeaderContainer = () => {
         </div>
         <div className="flex gap-4 ">
           {headerData.buttons.map((item, index) => (
-            <CustomButton
-              key={index}
-              text={item.text} mode={item.mode}
-            />
+            <Link href={item.link}>
+              <CustomButton
+                key={index}
+                text={item.text} mode={item.mode}
+              />
+            </Link>
           ))}
         </div>
       </div>
