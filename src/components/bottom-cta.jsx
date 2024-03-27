@@ -7,7 +7,7 @@ import Footer from './footer';
 
 const BottomCTA = () => {
   return (
-    <div className="relative border-red-500 bg-red-500">
+    <div className="relative">
       <div
         className="bg-mobile-cta-background-image lg:bg-cta-background-image bg-no-repeat bg-[-20.25rem_-0.4rem] lg:bg-[0rem_-0rem]   bg-[length:180vw_140vh] xl:bg-[length:100vw_150vh] px-10 xl:px-0  absolute right-0 top-0 mx-auto flex  pt-[100px] lg:h-[180vh] w-screen flex-col items-left xl:items-center justify-center"
       >
@@ -62,7 +62,7 @@ const BottomCTA = () => {
             <FooterHeader text="Reach Us" />
             <div className="mt-3 grid space-y-[1.25rem] text-sm break-word">
               <FooterItem text="Mobile: +1 (000) 111 2222" />
-              <FooterItem text="Email: theequippingcentreglobal@gmail.com" />
+              <FooterItem text="theequippingcentreglobal@gmail.com" />
               <FooterItem text="Give" />
               <FooterItem text="Contact Us" />
             </div>

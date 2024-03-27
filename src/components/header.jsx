@@ -73,12 +73,13 @@ const HeaderContainer = () => {
       </div>
       {/*End Desktop Navigation */}
       {/* Mobile Navigation */}
-      <div className={`${toggle ? "bg-white" : ""} sm:hidden flex items-center top-[0px] left-0 fixed  w-screen h-[54px]`}>
-        <div>
+      <div className={`${toggle ? "bg-white" : " backdrop-blur-xl backdrop-filter"} z-[1000rem] sm:hidden flex items-center top-[0px] left-0 fixed  w-screen h-[54px]`}>
+        <Link href="/">
+
           <img className="object-contain w-[4.125rem] h-[4.125rem] absolute top-4 left-4" src={"/assets/logo.svg"} />
-        </div>
+        </Link>
         {toggle ? <CloseIcon className="object-contain w-[24px] h-[24px] absolute top-3 right-4 text-[#0F0D18]"
-          onClick={() => setToggle(!toggle)} /> : <MenuIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4"
+          onClick={() => setToggle(!toggle)} /> : <MenuIcon className="text-white object-contain w-[24px] h-[24px] absolute top-4 right-4"
             onClick={() => setToggle(!toggle)} />}
         {/* Sidebar */}
         <div
@@ -121,5 +122,11 @@ const CloseIcon = ({ onClick, className }) => {
     <svg onClick={onClick} className={className} fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"></path> </g></svg>)
 }
 const MenuIcon = ({ onClick, className }) => {
-  return (<svg onClick={onClick} className={className} fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>)
+  return (<svg onClick={onClick} className={className} viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.7333 6.6665H1.26667C0.567106 6.6665 0 7.23361 0 7.93317V8.0665C0 8.76606 0.567106 9.33317 1.26667 9.33317H22.7333C23.4329 9.33317 24 8.76606 24 8.0665V7.93317C24 7.23361 23.4329 6.6665 22.7333 6.6665Z" fill="#FBFAFE" />
+    <path d="M22.7333 13.3335H1.26667C0.567106 13.3335 0 13.9006 0 14.6002V14.7335C0 15.4331 0.567106 16.0002 1.26667 16.0002H22.7333C23.4329 16.0002 24 15.4331 24 14.7335V14.6002C24 13.9006 23.4329 13.3335 22.7333 13.3335Z" fill="#FBFAFE" />
+    <path d="M22.7333 0H1.26667C0.567106 0 0 0.567106 0 1.26667V1.4C0 2.09956 0.567106 2.66667 1.26667 2.66667H22.7333C23.4329 2.66667 24 2.09956 24 1.4V1.26667C24 0.567106 23.4329 0 22.7333 0Z" fill="#FBFAFE" />
+  </svg>
+  )
+  // return (<svg onClick={onClick} className={className} fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>)
 }
