@@ -98,7 +98,8 @@ const HeaderContainer = () => {
             <div className="flex flex-col gap-4 mt-10">
               {headerData.buttons.map((item, index) => (
                 <div
-                  className={`border flex items-center justify-center py-2 w-full bg-[${item.color}] text-[${item.textColor}] rounded-lg   font-semibold hover:cursor-pointer hover:opacity-55 `}
+                  link={item.link}
+                  className={`border flex items-center justify-center py-4 w-full bg-[${item.color}] text-[${item.textColor}] rounded-lg   font-semibold hover:cursor-pointer hover:opacity-55 `}
                   key={index}
                 >
                   {item.text}

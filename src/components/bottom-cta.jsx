@@ -21,11 +21,10 @@ const BottomCTA = () => {
             Christ, with Joy.
           </div>
           <div className="mt-10  ">
-            <Link href={"http://paypal.me/niheagwam"}>
             <CustomButton
               className="!px-[1.6rem]"
+              link={"https://t.me/nelsoniheagwam"}
               text="Give Now" />
-              </Link>
           </div>
         </div>
         <div className="mx-auto  flex flex-col gap-10 lg:gap-10 justify-center items-center w-full lg:w-[screen] lg:p-20 ">
