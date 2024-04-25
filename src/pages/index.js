@@ -100,12 +100,9 @@ export default function Home() {
             </div>
           </div>
           <div className=" xl:h-[38.5rem]">
-
             <img src={'/assets/PNI-mic.png'} className=" w-[380px] h-[220px] xl:h-full xl:w-full xl:px-1  xl:object-fill object-fill lg:object-cover lg:px-6  " />
           </div>
         </div>
-
-
         <div className=" font-mona max-w-[94%] mx-auto px-8 flex mt-10  mb-[10rem] xl:w-[70.375rem] flex-col items-center justify-center border-[0.35rem] border-white bg-[#F78E00] lg:px-[4.6875rem] py-[3.125rem] text-white ">
           <div className="mx-auto space-y-4 text-[2rem] xl:text-[2rem] ">
             <div>

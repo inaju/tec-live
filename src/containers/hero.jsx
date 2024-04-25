@@ -1,8 +1,6 @@
-import React from 'react';
+import CustomButton from '../components/custom-button.jsx';
 import HeaderContainer from '../components/header.jsx';
 import TextComponent from '../components/text.jsx';
-import CustomButton from '../components/custom-button.jsx';
-import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -20,10 +18,9 @@ const Hero = () => {
             <div className="flex w-full lg:w-fit lg:flex-col xl:flex-row gap-3 mt-[2.25rem] xl:mt-[3.375rem]">
               <CustomButton
                 link={"/about-us"}
-
+                className="!pl-[15%]"
                 text={" Learn More"} mode={"black"}
               />
-
               <CustomButton
                 link={"https://t.me/nelsoniheagwam"}
                 className="hidden lg:block"
@@ -31,7 +28,7 @@ const Hero = () => {
               />
               <CustomButton
                 link={"https://t.me/nelsoniheagwam"}
-                className="!w-full lg:hidden block"
+                className="!w-full lg:hidden block !px-[13%]"
                 text={"Our latest sermon"} mode={"light"}
               />
             </div>

@@ -37,15 +37,12 @@ const ContactPage = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div className=" pt-[20.25rem]">
-
+                <div className=" pt-[25%]">
                     <div className="mx-auto flex flex-col gap-10 lg:gap-10 justify-center items-center w-full xl:max-w-[68%] max-w-[94%]">
                         <h2 className="text-center text-[32px] xl:text-[3.25rem] xl:mb-[1.75rem] text-white font-bold font-mona ">Send A Message</h2>
                         <form className="lg:bg-[#E6EAEE12] lg:p-[3.75rem]  xl:max-w-[81rem] w-full mb-[10rem] space-y-[1.875rem]">
                             <div className="grid grid-cols-1 xl:grid-cols-3 gap-[16px] lg:gap-4 ">
-
                                 <CustomInput className={"!min-w-[23.75rem]"} placeholderText={"Enter your name"} />
                                 <CustomInput className={"!min-w-[23.75rem]"} placeholderText={"Enter your email"} />
                                 <CustomInput className={"!min-w-[23.75rem]"} placeholderText={"Enter your phone number"} />
@@ -58,10 +55,7 @@ const ContactPage = () => {
 
                     </div>
                     <div className=" bg-[#121519] h-[90vh] pb-30">
-
-
                         <div className=" mx-auto  xl:max-w-[68%] max-w-[94%] flex flex-col  gap-12 items-start sm:flex-row justify-between  lg:mx-auto">
-
                             <div className='w-[29.25rem] '>
                                 <FooterHeader text="The Equipping Center" />
                                 <div className="mt-3 grid space-y-[1.25rem] text-sm">

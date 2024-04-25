@@ -85,18 +85,18 @@ const HeaderContainer = () => {
             onClick={() => setToggle(!toggle)} />}
         {/* Sidebar */}
         <div
-          className={`${!toggle ? "hidden" : "flex"
+          className={`${!toggle ? "hidden" : "flex "
             } p-6 bg-[#0F0D18] fixed z-10 top-16 right-0 left-0  w-screen h-screen sidebar`}
         >
-          <ul className="list-none flex flex-1 flex-col ">
-            <div className="flex flex-col gap-4 font-semibold text-[#FFFFFF] ">
+          <ul className="list-none flex flex-1 flex-col space-between ">
+            <div className="flex flex-col gap-4 font-semibold text-[#FFFFFF]  ">
               {headerData.links.map((item, index) => (
-                <Link href={item?.link} className="hover:cursor-pointer hover:opacity-55 text-2xl" key={index}>
+                <Link href={item?.link} className="hover:cursor-pointer hover:opacity-55 text-2xl text-[1.8rem]" key={index}>
                   {item.name}
                 </Link>
               ))}
             </div>
-            <div className="flex flex-col gap-4 mt-10">
+            <div className="flex flex-col gap-4 mt-10 ">
               {headerData.buttons.map((item, index) => (
                 <div
                   link={item.link}
