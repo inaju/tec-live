@@ -66,6 +66,7 @@ const HeaderContainer = () => {
           {headerData.buttons.map((item, index) => (
             <Link href={item.link}>
               <CustomButton
+                link={item.link}
                 key={index}
                 text={item.text} mode={item.mode}
               />

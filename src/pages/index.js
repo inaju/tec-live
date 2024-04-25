@@ -125,8 +125,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" h-[350vh] lg:h-[250vh] bg-[#121519]">
-
+      <div className=" h-[350vh] lg:h-[250vh] xl:h-[230vh] 2xl:h-[200vh]   bg-[#121519]">
         <BottomCTA />
       </div>
     </div>

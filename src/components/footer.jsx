@@ -1,13 +1,11 @@
 import React from 'react'
 
-
 const Footer = () => {
     return (
         <div className="bg-[#121519] pb-48 lg:mt-0 mt-[300px] mx-auto hidden lg:block  ">
             <div className="bg-[#65656599] h-0.5  items-center flex mx-auto"></div>
             <div className="flex flex-col  gap-10 items-start mx-12 sm:flex-row justify-between max-w-[81rem] lg:mx-auto  mt-10 mb-20">
-
-                <div className='w-[29.25rem] '>
+                <div className='w-[29.25rem]'>
                     <FooterHeader text="The Equipping Center" />
                     <div className="mt-3 grid space-y-[1.25rem] text-sm">
                         <FooterItem text="11832 S. Warner Elliot LoopPhoenix, AZ 85044" />

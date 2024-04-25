@@ -45,26 +45,26 @@ const BottomCTA = () => {
           <div className='w-[29.25rem] '>
             <FooterHeader text="The Equipping Center" />
             <div className="mt-3 grid space-y-[1.25rem] text-sm">
-              <FooterItem text="11832 S. Warner Elliot LoopPhoenix, AZ 85044" />
+              <FooterItem text="11832 S. Warner Elliot LoopPhoenix, AZ 85044" link="https://maps.app.goo.gl/5DLxAww69yyTes9s8" />
               <FooterItem text="Copyright © The Equpping Center All Rights Reserved" />
             </div>
           </div>
           <div>
             <FooterHeader text="Quick links" />
             <div className="mt-3 grid space-y-[1.25rem] text-sm">
-              <FooterItem text="About Us" />
-              <FooterItem text="Sermons" />
-              <FooterItem text="Give" />
-              <FooterItem text="Contact Us" />
+              <FooterItem text="About Us" link="about" />
+              <FooterItem text="Sermons" link={"https://t.me/nelsoniheagwam"} />
+              <FooterItem text="Give" link='http://paypal.me/niheagwam' />
+              <FooterItem text="Contact Us" link="contact" />
             </div>
           </div>
           <div className=' '>
             <FooterHeader text="Reach Us" />
             <div className="mt-3 grid space-y-[1.25rem] text-sm break-word">
-              <FooterItem text="Mobile: +1 (000) 111 2222" />
-              <FooterItem text="theequippingcentreglobal@gmail.com" />
-              <FooterItem text="Give" />
-              <FooterItem text="Contact Us" />
+              <FooterItem text="Mobile: +1 (000) 111 2222" link="tel:+1 (000) 111 2222" />
+              <FooterItem text="theequippingcentreglobal@gmail.com" link="mailto:theequippingcentreglobal@gmail.com" />
+              <FooterItem text="Give" link='http://paypal.me/niheagwam' />
+              <FooterItem text="Contact Us" link="contact" />
             </div>
           </div>
         </div>
@@ -77,9 +77,9 @@ const BottomCTA = () => {
 export default BottomCTA;
 
 
-export const FooterItem = ({ text }) => {
+export const FooterItem = ({ text, link = "#" }) => {
   return (
-    <p><a className="font-inter leading-[32px] font-normal inline-flex lg:text-[1.5rem] text-[24px]  gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">{text}</a></p>
+    <p> <Link href={link} className="font-inter leading-[32px] font-normal inline-flex lg:text-[1.5rem] text-[24px]  gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" >{text}</Link></p>
   )
 }
 export const FooterHeader = ({ text }) => {
