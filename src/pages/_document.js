@@ -13,9 +13,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link rel="shortcut icon" href="/assets/logo.svg" />
-        <title>
-          TEC-The Equipping Church Global
-        </title>
+        
       </Head>
       <body className="">
         <Main />

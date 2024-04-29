@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'mobile-hero-pattern': "url('/assets/mobile_hero_background_image_0.png')",
-        'hero-pattern': "url('/assets/hero_background_image_0-min.png')",
+        'hero-pattern': "url('/assets/hero_background_image_0-min-apr.png')",
         'contact-hero-pattern': "url('/assets/giving_background_image_0.png')",
         'mobile-contact-hero-pattern': "url('/assets/mobile_giving_background_image_0.png')",
         'about-hero-pattern': "url('/assets/hero_background_image_2.png')",

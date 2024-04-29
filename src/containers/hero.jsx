@@ -18,7 +18,12 @@ const Hero = () => {
             <div className="flex w-full lg:w-fit lg:flex-col xl:flex-row gap-3 mt-[2.25rem] xl:mt-[3.375rem]">
               <CustomButton
                 link={"/about-us"}
-                className="!pl-[15%]"
+                className="!pl-[15%] lg:hidden"
+                text={" Learn More"} mode={"black"}
+              />
+              <CustomButton
+                link={"/about-us"}
+                className=" hidden lg:block"
                 text={" Learn More"} mode={"black"}
               />
               <CustomButton

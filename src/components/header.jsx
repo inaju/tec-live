@@ -55,7 +55,6 @@ const HeaderContainer = () => {
         <div className="flex gap-[2.5rem]  text-[#FFFFFF] ">
           {headerData.links.map((item, index) => (
             <div className={`hover:cursor-pointer hover:opacity-55 text-[1.25rem] pb-2`} key={index}>
-              {/* <div className={`hover:cursor-pointer hover:opacity-55 text-[1.25rem] pb-2 ${item.link == window?.location?.pathname ? 'font-semibold  border-b-[2px]' : 'font-medium'}`} key={index}> */}
               <Link
                 className={`hover:cursor-pointer hover:opacity-55 text-[1.25rem] pb-2 ${item.link == pathname ? 'font-semibold  border-b-[2px]' : 'font-medium'}`}
                 href={item?.link}>{item.name}</Link>
@@ -64,13 +63,11 @@ const HeaderContainer = () => {
         </div>
         <div className="flex gap-4 ">
           {headerData.buttons.map((item, index) => (
-            <Link href={item.link}>
               <CustomButton
                 link={item.link}
                 key={index}
                 text={item.text} mode={item.mode}
               />
-            </Link>
           ))}
         </div>
       </div>
