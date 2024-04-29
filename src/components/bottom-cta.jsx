@@ -52,7 +52,7 @@ const BottomCTA = () => {
           <div>
             <FooterHeader text="Quick links" />
             <div className="mt-3 grid space-y-[1.25rem] text-sm">
-              <FooterItem text="About Us" link="about" />
+              <FooterItem text="About Us" link="about-us" />
               <FooterItem text="Sermons" link={"https://t.me/nelsoniheagwam"} />
               <FooterItem text="Give" link='http://paypal.me/niheagwam' />
               <FooterItem text="Contact Us" link="contact" />
