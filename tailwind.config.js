@@ -12,12 +12,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'mobile-hero-pattern': "url('/assets/mobile_hero_background_image_0.png')",
+        'mobile-hero-pattern': "url('/assets/mobile_hero_background_image_0-apr.png')",
         'hero-pattern': "url('/assets/hero_background_image_0-min-apr.png')",
         'contact-hero-pattern': "url('/assets/giving_background_image_0.png')",
         'mobile-contact-hero-pattern': "url('/assets/mobile_giving_background_image_0.png')",
-        'about-hero-pattern': "url('/assets/hero_background_image_2.png')",
-        'mobile-about-hero-pattern': "url('/assets/mobile_hero_background_image_2.png')",
+        'about-hero-pattern': "url('/assets/hero_background_image_2_apr.png')",
+        'mobile-about-hero-pattern': "url('/assets/mobile_hero_background_image_2_apr.png')",
         'sermons-hero-pattern': "url('/assets/hero_background_image_3.png')",
         'cta-background-image': `url('/assets/footer_image_overlay_0.png')`,
         'mobile-cta-background-image': `url('/assets/mobile_footer_image_overlay_0.png')`
