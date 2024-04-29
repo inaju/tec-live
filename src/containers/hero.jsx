@@ -33,8 +33,8 @@ const Hero = () => {
               />
               <CustomButton
                 link={"https://t.me/nelsoniheagwam"}
-                className="!w-full lg:hidden block !px-[13%]"
-                text={"Our latest sermon"} mode={"light"}
+                className="!w-full lg:hidden block !pl-[13%]"
+                text={"Latest sermon"} mode={"light"}
               />
             </div>
           </div>
