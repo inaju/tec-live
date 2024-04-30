@@ -39,12 +39,12 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 mt-[64px] xl:mt-24 xl:px-0 xl:flex-row justify-center xl:bg-transparent lg:bg-[#0F0D18] xl:pt-0 pt-20 pb-10 ">
-            <div className="xl:hidden block font-mona bg-[#E6EAEE12] mb-3 border rounded-full text-[whitesmoke] text-center text-[21px] lg:text-[1.3rem] not-italic font-bold leading-[150%] tracking-[0.125rem] bg-clip-text">*Upcoming Events*</div>
+            <div className="xl:hidden block font-mona bg-[#E6EAEE12] mb-3 border rounded-full text-[whitesmoke] text-center text-[21px] lg:text-[1.3rem] not-italic font-bold leading-[150%] tracking-[0.125rem] bg-clip-text">Upcoming Events</div>
             <div>
               <img className="lg:h-[39.3125rem] lg:w-[29.375rem] w-full h-full object-fit " src={'/assets/home_background_img_3.png'} />
             </div>
             <div>
-              <div className="hidden xl:block font-mona bg-[#E6EAEE12] mb-[1.875rem] px-[2.5rem] py-[0.625rem] border rounded-full text-[whitesmoke] text-center text-[1.3rem] not-italic font-bold leading-[150%] tracking-[0.125rem] bg-clip-text">*Upcoming Events*</div>
+              <div className="hidden xl:block font-mona bg-[#E6EAEE12] mb-[1.875rem] px-[2.5rem] py-[0.625rem] border rounded-full text-[whitesmoke] text-center text-[1.3rem] not-italic font-bold leading-[150%] tracking-[0.125rem] bg-clip-text">Upcoming Events</div>
               <img className="hidden lg:block h-[40.6875rem] w-[22.5rem] " src={'/assets/home_background_img_1.png'} />
             </div>
             <div>

@@ -81,8 +81,7 @@ export default function Home() {
               We seek to promote brotherly love and affection as we{' '}
               fellowship. Serving{' '}
               God together with one passion, and knit in love as
-              family. Put a picture of a lovely setting or people
-              smiling sha at a meeting.
+              family.
             </div>
           </div>
           {/* {"desktop"} */}
@@ -95,8 +94,7 @@ export default function Home() {
               We seek to promote b<span>rotherly love and affection as we{' '}</span>
               fellowship. Serving{' '}
               G<span>od together with one passion, and knit</span> in love as
-              family. Put a <span>picture of a lovely setting or people</span>  {" "}
-              smiling sha at a meeti<span>ng</span>
+              family.
             </div>
           </div>
           <div className=" xl:h-[38.5rem]">

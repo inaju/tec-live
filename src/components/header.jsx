@@ -63,45 +63,46 @@ const HeaderContainer = () => {
         </div>
         <div className="flex gap-4 ">
           {headerData.buttons.map((item, index) => (
-              <CustomButton
-                link={item.link}
-                key={index}
-                text={item.text} mode={item.mode}
-              />
+            <CustomButton
+              link={item.link}
+              key={index}
+              text={item.text} mode={item.mode}
+            />
           ))}
         </div>
       </div>
       {/*End Desktop Navigation */}
       {/* Mobile Navigation */}
-      <div className={`${toggle ? "bg-white" : " backdrop-blur-xl backdrop-filter"} z-[1000rem] sm:hidden flex items-center top-[0px] left-0 fixed  w-screen h-[64px] `}>
+      <div className={`${toggle ? "backdrop-blur-xl backdrop-filter bg-[#0F0D18] " : " backdrop-blur-xl backdrop-filter"} z-[1000rem] sm:hidden flex items-center top-[0px] left-0 fixed  w-screen h-[64px] `}>
         <Link href="/">
           <img className="object-contain w-[4.125rem] h-[4.125rem] absolute top-4 left-4" src={"/assets/logo.svg"} />
         </Link>
-        {toggle ? <CloseIcon className="object-contain w-[24px] h-[24px] absolute top-4 right-4 text-[#0F0D18]"
-          onClick={() => setToggle(!toggle)} /> : <MenuIcon className="text-white object-contain w-[3.2rem] h-[4rem] absolute top-4 right-4"
+        {toggle ? <CloseIcon fill="white" className="object-contain  w-[3.2rem] h-[4rem] absolute top-4 right-4 text-white"
+          onClick={() => setToggle(!toggle)} /> : <MenuIcon className="text-white object-contain w-[2.8rem] h-[4rem] absolute top-4 right-4"
             onClick={() => setToggle(!toggle)} />}
         {/* Sidebar */}
         <div
           className={`${!toggle ? "hidden" : "flex "
-            } p-6 bg-[#0F0D18] fixed z-10 top-16 right-0 left-0  w-screen h-screen sidebar`}
+            } p-6 bg-[#0F0D18] fixed z-10 top-24 right-0 left-0  w-screen h-screen sidebar`}
         >
           <ul className="list-none flex flex-1 flex-col space-between ">
-            <div className="flex flex-col gap-4 font-semibold text-[#FFFFFF]  ">
+            <div className="flex flex-col gap-12 font-semibold text-[#FFFFFF] mt-10  ">
               {headerData.links.map((item, index) => (
                 <Link href={item?.link} className="hover:cursor-pointer hover:opacity-55 text-2xl text-[1.8rem]" key={index}>
                   {item.name}
                 </Link>
               ))}
             </div>
-            <div className="flex flex-col gap-4 mt-10 ">
+            <div className="flex flex-col gap-6 mt-14 ">
               {headerData.buttons.map((item, index) => (
-                <div
-                  link={item.link}
-                  className={`border flex items-center justify-center py-4 w-full bg-[${item.color}] text-[${item.textColor}] rounded-lg   font-semibold hover:cursor-pointer hover:opacity-55 `}
-                  key={index}
-                >
-                  {item.text}
-                </div>
+                <Link href={item?.link}>
+                  <div
+                    className={`border flex items-center justify-center py-4 w-full bg-[${item.color}] text-[${item.textColor}] rounded-lg   font-semibold hover:cursor-pointer hover:opacity-55 `}
+                    key={index}
+                  >
+                    {item.text}
+                  </div>
+                </Link>
               ))}
             </div>
           </ul>
@@ -117,9 +118,9 @@ const HeaderContainer = () => {
 export default HeaderContainer;
 
 
-const CloseIcon = ({ onClick, className }) => {
+const CloseIcon = ({ onClick, className, fill }) => {
   return (
-    <svg onClick={onClick} className={className} fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"></path> </g></svg>)
+    <svg onClick={onClick} className={className} xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill={fill}></path> </g></svg>)
 }
 const MenuIcon = ({ onClick, className }) => {
   return (<svg onClick={onClick} className={className} viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
