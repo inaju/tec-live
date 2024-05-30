@@ -4,8 +4,8 @@ import TextComponent from '@/components/text'
 
 const AboutUs = () => {
     return (
-        <div className="relative w-screen bg-no-repeat bg-[-10px_-10rem] xl:h-[164.625rem] 2xl:bg-[length:100vw_189.5rem] xl:bg-[length:100vw_164.5rem] bg-mobile-about-hero-pattern md:bg-about-hero-pattern">
-            <div className="mx-auto  xl:max-w-[68%] max-w-[94%] pt-4">
+        <div className="relative w-screen bg-no-repeat bg-[-10px_-10rem] lg:h-[164.625rem] xl:bg-[length:100vw_189.5rem] lg:bg-[length:100vw_164.5rem] bg-mobile-about-hero-pattern md:bg-about-hero-pattern">
+            <div className="mx-auto  lg:max-w-[68%] max-w-[94%] pt-4">
                 <HeaderContainer />
                 <div>
                     <TextComponent
@@ -17,10 +17,10 @@ const AboutUs = () => {
                         text="The Equipping Center is an apostolic summon and multi-racial church sent to present the gospel to the unsaved, make ministry gifts out of saints and deploy the trained to do all God has said for them to do. We are a ministry with a heart focused on planting churches and building Christian communities everywhere especially across the Western part of the world. " />
                 </div>
             </div>
-            <div className="2xl:max-w-[69%] mx-auto mt-[11.875rem] flex md:flex-row flex-col md:space-x-[3.875rem] mb-[6rem] ">
+            <div className="lg:max-w-[69%] mx-auto mt-[11.875rem] flex md:flex-row flex-col md:space-x-[3.875rem] mb-[6rem] ">
                 <div className="flex flex-col gap-[6.25rem] ">
-                    <img src="/assets/vision_img_0.png" className='hidden lg:block h-[38.3125rem] w-[71.1875rem] ' />
-                    <img src="/assets/mobile_vision_img_0.png" className='block lg:hidden h-[305px] w-[378px] ' />
+                    <img src="/assets/vision_img_0.png" className='hidden lg:block h-[38.3125rem] h-[32.3125rem] w-[71.1875rem] ' />
+                    <img src="/assets/mobile_vision_img_0.png" className='block lg:hidden h-[305px]  w-[378px] ' />
                     <div className='bg-white/[0.1]  py-[3.5rem] px-[4.125rem] w-fit h-fit rounded-md self-end'>
                         <TextComponent
                             className=" !text-left"
@@ -49,7 +49,7 @@ const AboutUs = () => {
                 <div className="flex flex-col-reverse md:flex-col gap-[3.8125rem] items-center mt-[10rem]">
                     <div className='bg-white/[0.1] py-[3.5rem] px-[4.125rem] rounded-md w-fit h-fit'>
                         <TextComponent
-                            className=" !text-left ]"
+                            className=" !text-left lg:text-[30px]"
                             mode="heading-1"
                             text="Our Vision" />
                         <TextComponent
@@ -57,7 +57,7 @@ const AboutUs = () => {
                             className="mt-[1.25rem] max-w-[29.5rem] !text-left !text-[1.25rem] !font-normal"
                             text="We envision men everywhere fulfilling ministry and walking in the fulness of God's plans for their" />
                     </div>
-                    <img src="/assets/mission_img_0.png" className='h-[49rem] w-[34.6875rem] ' />
+                    <img src="/assets/mission_img_0.png" className='h-[49rem] lg:h-[42rem] w-[34.6875rem] ' />
                 </div>
             </div>
             <div className=" bg-[#E8E6E2] lg:py-[14.375rem] py-[66px]  ">
@@ -75,7 +75,9 @@ const AboutUs = () => {
                             mode="heading-1"
                             className="mt-[1.875rem] !text-[#16181E] !text-left md:text-center"
                             text="Pastor Nelson" />
-                        <div className="!text-[#16181E] border-b-8 border-[#F78E00] !text-left md:text-center">
+                        <div
+                            className="!text-[#16181E] border-b-8 border-[#F78E00] !text-left md:text-center"
+                        >
                         </div>
                         <TextComponent
                             mode="paragraph-2"
@@ -84,7 +86,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className="  h-[350vh] lg:h-[250vh] xl:h-[230vh] 2xl:h-[200vh]  bg-[#121519]">
+            <div className="  h-[350vh] lg:h-[250vh] xl:h-[200vh]  bg-[#121519]">
                 <BottomCTA />
             </div>
         </div>

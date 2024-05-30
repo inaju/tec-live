@@ -73,7 +73,7 @@ export default function Home() {
         </div>
         <div className=" relative mx-auto flex flex-col items-center justify-center py-2  max-w-[94%] lg:max-w-[1200px] ">
           {/* {"mobile"} */}
-          <div className=" xl:hidden  border  lg:px-6 pb-8">
+          <div className=" lg:hidden  border  md:px-6 pb-8">
             <div className="font-mona blend-container text-[40px] text-3xl font-extrabold lg:font-bold  leading-[45px] lg:leading-[2.5rem]">
               A Family Bound Together With Love
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
           {/* {"desktop"} */}
 
-          <div className="absolute left-[4.1%]  top-[10.0625rem] hidden xl:block ">
+          <div className="absolute left-[4.1%]  top-[10.0625rem] hidden lg:block ">
             <div className="font-mona blend-container max-w-[46.9375rem] text-[32px] lg:text-[4rem] font-bold leading-[5rem]">
               A Fami<span>ly Bound</span> Togeth<span>er With Love</span>
             </div>
@@ -97,12 +97,12 @@ export default function Home() {
               family.
             </div>
           </div>
-          <div className=" xl:h-[38.5rem]">
-            <img src={'/assets/PNI-mic.png'} className=" w-[380px] h-[220px] xl:h-full xl:w-full xl:px-1  xl:object-fill object-fill lg:object-cover lg:px-6  " />
+          <div className=" lg:h-[38.5rem]">
+            <img src={'/assets/PNI-mic.png'} className=" w-[380px] h-[220px] lg:h-full lg:w-full lg:px-1  lg:object-fill object-fill lg:object-cover lg:px-6  " />
           </div>
         </div>
-        <div className=" font-mona max-w-[94%] mx-auto px-8 flex mt-10  mb-[10rem] xl:w-[70.375rem] flex-col items-center justify-center border-[0.35rem] border-white bg-[#F78E00] lg:px-[4.6875rem] py-[3.125rem] text-white ">
-          <div className="mx-auto space-y-4 text-[2rem] xl:text-[2rem] ">
+        <div className=" font-mona max-w-[94%] mx-auto px-8 flex mt-10  mb-[10rem] lg:w-[70.375rem] flex-col items-center justify-center border-[0.35rem] border-white bg-[#F78E00] lg:px-[4.6875rem] py-[3.125rem] text-white ">
+          <div className="mx-auto space-y-4 text-[2rem] lg:text-[2rem] ">
             <div>
               <span className="font-light">
                 Join Us Every Sunday{' '}
@@ -120,7 +120,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" h-[300vh] lg:h-[250vh] xl:h-[230vh] 2xl:h-[200vh] bg-[#121519]">
+      <div className=" h-[300vh] lg:h-[250vh]   bg-[#121519]">
         <BottomCTA />
       </div>
     </div>
