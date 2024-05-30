@@ -75,9 +75,7 @@ const AboutUs = () => {
                             mode="heading-1"
                             className="mt-[1.875rem] !text-[#16181E] !text-left md:text-center"
                             text="Pastor Nelson" />
-                        <div
-                            className="!text-[#16181E] border-b-8 border-[#F78E00] !text-left md:text-center"
-                        >
+                        <div className="!text-[#16181E] border-b-8 border-[#F78E00] !text-left md:text-center">
                         </div>
                         <TextComponent
                             mode="paragraph-2"

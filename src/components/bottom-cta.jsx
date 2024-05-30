@@ -23,7 +23,7 @@ const BottomCTA = () => {
           <div className="mt-10  ">
             <CustomButton
               className="!px-[1.6rem]"
-              link={"https://t.me/nelsoniheagwam"}
+              link={"http://paypal.me/niheagwam"}
               text="Give Now" />
           </div>
         </div>
@@ -45,7 +45,7 @@ const BottomCTA = () => {
           <div className='w-[29.25rem] '>
             <FooterHeader text="The Equipping Center" />
             <div className="mt-3 grid space-y-[1.25rem] text-sm">
-              <FooterItem text="11832 S. Warner Elliot LoopPhoenix, AZ 85044" link="https://maps.app.goo.gl/5DLxAww69yyTes9s8" />
+              <FooterItem text="ST PATRICK'S HALL, Conybere St Albans Academy, B12 0YH" link="https://maps.app.goo.gl/u5WgDtwdBj8RgCL17" />
               <FooterItem text="Copyright © The Equpping Center All Rights Reserved" />
             </div>
           </div>
@@ -61,8 +61,8 @@ const BottomCTA = () => {
           <div className=' '>
             <FooterHeader text="Reach Us" />
             <div className="mt-3 grid space-y-[1.25rem] text-sm break-word">
-              <FooterItem text="Mobile: +1 (000) 111 2222" link="tel:+1 (000) 111 2222" />
-              <FooterItem text="theequippingcentreglobal@gmail.com" link="mailto:theequippingcentreglobal@gmail.com" />
+              <FooterItem text="Mobile: +447404438882" link="tel:+447404438882" />
+              <FooterItem text="theequippingcenterglobal@gmail.com" link="mailto:theequippingcenterglobal@gmail.com" />
               <FooterItem text="Give" link='http://paypal.me/niheagwam' />
               <FooterItem text="Contact Us" link="contact" />
             </div>

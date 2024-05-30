@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className='w-[29.25rem]'>
                     <FooterHeader text="The Equipping Center" />
                     <div className="mt-3 grid space-y-[1.25rem] text-sm">
-                        <FooterItem text="11832 S. Warner Elliot LoopPhoenix, AZ 85044" />
+                        <FooterItem text=" ST PATRICK'S HALL, Conybere St Albans Academy, B12 0YH" link="https://maps.app.goo.gl/u5WgDtwdBj8RgCL17" />
                         <FooterItem text="Copyright © The Equpping Center All Rights Reserved" />
                     </div>
                 </div>
@@ -24,8 +24,8 @@ const Footer = () => {
                 <div className=' '>
                     <FooterHeader text="Reach Us" />
                     <div className="mt-3 grid space-y-[1.25rem] text-sm break-word">
-                        <FooterItem text="Mobile: +1 (000) 111 2222" />
-                        <FooterItem text="Email: theequippingcentreglobal@gmail.com" />
+                        <FooterItem text="Mobile: +447404438882" />
+                        <FooterItem text="Email: theequippingcenterglobal@gmail.com" />
                         <FooterItem text="Give" />
                         <FooterItem text="Contact Us" />
                     </div>

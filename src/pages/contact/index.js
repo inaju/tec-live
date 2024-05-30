@@ -54,12 +54,12 @@ const ContactPage = () => {
                         </form>
 
                     </div>
-                    <div className=" bg-[#121519] h-[90vh] pb-30">
+                    <div className=" bg-[#121519] h-[50vh] pb-30  ">
                         <div className=" mx-auto  xl:max-w-[68%] max-w-[94%] flex flex-col  gap-12 items-start sm:flex-row justify-between  lg:mx-auto">
                             <div className='w-[29.25rem] '>
                                 <FooterHeader text="The Equipping Center" />
                                 <div className="mt-3 grid space-y-[1.25rem] text-sm">
-                                    <FooterItem text="11832 S. Warner Elliot LoopPhoenix, AZ 85044" />
+                                    <FooterItem text="ST PATRICK'S HALL, Conybere St Albans Academy, B12 0YH" link="https://maps.app.goo.gl/u5WgDtwdBj8RgCL17"/>
                                     <FooterItem text="Copyright © The Equpping Center All Rights Reserved" />
                                 </div>
                             </div>
@@ -74,8 +74,8 @@ const ContactPage = () => {
                             <div className=' '>
                                 <FooterHeader text="Reach Us" />
                                 <div className="mt-3 grid space-y-[1.25rem] text-sm break-word">
-                                    <FooterItem text="Mobile: +1 (000) 111 2222" />
-                                    <FooterItem text="theequippingcentreglobal@gmail.com" />
+                                    <FooterItem text="Mobile: +447404438882" />
+                                    <FooterItem text="theequippingcenterglobal@gmail.com" />
                                 </div>
                             </div>
                         </div>

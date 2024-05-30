@@ -8,27 +8,27 @@ const carouselItemDataRight = [
     imageLocation: 'right',
     imageSrc: 'assets/carousel_image_1.png',
     mobileImageSrc: 'assets/mobile_carousel_image_1.png',
-    subText: 'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
+    subText: 'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
     text: 'Spreading the Knowledge of God in Every Place',
   },
   {
     imageLocation: 'right',
     imageSrc: 'assets/carousel_image_1.png',
-    subText: 'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
+    subText: 'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
     text: 'Second Carousel',
   },
   {
     imageLocation: 'left',
     imageSrc: 'assets/carousel_image_2.png',
     subText:
-      'Through teachings and active discipleship, we are committed to raising faithful men who are sound in truth, able to give a defence for the faith and will be able to teach others also. ',
+      'Through teachings and active discipleship, we are committed to raising faithful men who are sound in truth, able to give a defence for the faith and will be able to teach others also. ',
     text: 'First Left',
   },
   {
     imageLocation: 'right',
     imageSrc: 'assets/carousel_image_1.png',
     subText:
-      'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
+      'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
     text: 'Third Carousel',
   },
 ];
@@ -39,21 +39,21 @@ const carouselItemDataLeft = [
     imageLocation: 'left',
     imageSrc: 'assets/carousel_image_2.png',
     mobileImageSrc: 'assets/mobile_carousel_image_2.png',
-    subText: 'Through teachings and active discipleship, we are committed to raising faithful men who are sound in truth, able to give a defence for the faith and will be able to teach others also. ',
+    subText: 'Through teachings and active discipleship, we are committed to raising faithful men who are sound in truth, able to give a defence for the faith and will be able to teach others also. ',
     text: 'Reaching The Unsaved',
   },
   {
     imageLocation: 'right',
     imageSrc: 'assets/carousel_image_1.png',
     subText:
-      'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
+      'At The Equipping Center, God has put us on display in Christ to the nations. We operate with the message of reconciliation on our lips. Preaching the Gospel to all, till the whole world calls on and believes in the Name of Jesus. ',
     text: 'Spreading the Knowledge of God in Every Place',
   },
   {
     imageLocation: 'left',
     imageSrc: 'assets/carousel_image_2.png',
     subText:
-      'Through teachings and active discipleship, we are committed to raising faithful men who are sound in truth, able to give a defence for the faith and will be able to teach others also. ',
+      'Through teachings and active discipleship, we are committed to raising faithful men who are sound in truth, able to give a defence for the faith and will be able to teach others also. ',
     text: 'Second Left',
   },
 ];
@@ -108,13 +108,13 @@ export default function Home() {
                 Join Us Every Sunday{' '}
               </span>
               <span className="mx-2 font-semibold">
-                9:00am, 10:45am, & 4:30pm
+                - 12pm
               </span>
             </div>
             <div>
               Address
               <span className="mx-2 font-semibold">
-                11832 S. Warner Elliot LoopPhoenix, AZ 85044
+                - ST PATRICK'S HALL, Conybere St Albans Academy, B12 0YH
               </span>
             </div>
           </div>
