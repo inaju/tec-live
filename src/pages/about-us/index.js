@@ -86,7 +86,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className="  h-[350vh] lg:h-[250vh] xl:h-[200vh]  bg-[#121519]">
+            <div className="  h-[350vh] lg:h-[240vh] bg-[#121519]">
                 <BottomCTA />
             </div>
         </div>

@@ -31,7 +31,6 @@ const BottomCTA = () => {
           <h2 className="text-center text-[32px] lg:text-[3.25rem] lg:mb-[1.75rem] text-white font-bold font-mona ">Join Our Mailing List</h2>
           <form className="lg:bg-[#E6EAEE12] lg:p-[3.75rem] grid grid-cols-1 lg:grid-cols-2 gap-[16px] lg:gap-4  lg:max-w-[81rem] w-full mb-[10rem]">
             <CustomInput placeholderText={"Enter your name"} />
-            <CustomInput placeholderText={"Enter your phone number"} />
             <CustomInput placeholderText={"Enter your email"} />
 
             <button className="bg-[#E8E6E2] py-[8px]  text-[16px] lg:text-[1.125rem] text-black w-full font-medium p-2 rounded-md">
@@ -40,7 +39,7 @@ const BottomCTA = () => {
 
         </div>
 
-        <div className=" flex flex-col  gap-12 items-start mx-1 sm:flex-row justify-between  lg:mx-auto  mt-10 mb-20 ">
+        <div className=" flex flex-col  gap-12 items-start mx-1 sm:flex-row justify-between  lg:mx-auto  mt-6 mb-20 ">
 
           <div className='w-[29.25rem] '>
             <FooterHeader text="The Equipping Center" />

@@ -42,10 +42,10 @@ const ContactPage = () => {
                     <div className="mx-auto flex flex-col gap-10 lg:gap-10 justify-center items-center w-full lg:max-w-[68%] max-w-[94%]">
                         <h2 className="text-center text-[32px] lg:text-[3.25rem] lg:mb-[1.75rem] text-white font-bold font-mona ">Send A Message</h2>
                         <form className="lg:bg-[#E6EAEE12] lg:p-[3.75rem]  lg:max-w-[81rem] w-full mb-[10rem] space-y-[1.875rem]">
-                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-[16px] lg:gap-4 ">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] lg:gap-4 ">
                                 <CustomInput className={"!min-w-[19.75rem]"} placeholderText={"Enter your name"} />
                                 <CustomInput className={"!min-w-[19.75rem]"} placeholderText={"Enter your email"} />
-                                <CustomInput className={"!min-w-[19.75rem]"} placeholderText={"Enter your phone number"} />
+                                {/* <CustomInput className={"!min-w-[19.75rem]"} placeholderText={"Enter your phone number"} /> */}
                             </div>
                             <CustomInput className={"!h-[7.5rem]"} placeholderText={"Enter your message"} />
 
