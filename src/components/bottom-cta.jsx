@@ -78,11 +78,11 @@ export default BottomCTA;
 
 export const FooterItem = ({ text, link = "#" }) => {
   return (
-    <p> <Link href={link} className="font-inter leading-[32px] font-normal inline-flex lg:text-[1.5rem] text-[24px]  gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" >{text}</Link></p>
+    <p> <Link href={link} className="font-inter leading-[32px] font-normal inline-flex lg:text-[1.5rem] text-[1.5rem]  gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" >{text}</Link></p>
   )
 }
 export const FooterHeader = ({ text }) => {
   return (
-    <h4 className="font-mona text-[32px] lg:text-[2rem] mb-[1.25rem] text-gray-900 uppercase dark:text-gray-100">{text}</h4>
+    <h4 className="font-mona text-[2rem] lg:text-[2rem] mb-[1.25rem] text-gray-900 uppercase dark:text-gray-100">{text}</h4>
   )
 }

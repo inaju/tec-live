@@ -54,7 +54,7 @@ const ContactPage = () => {
                         </form>
 
                     </div>
-                    <div className=" bg-[#121519] h-[50vh] pb-30  ">
+                    <div className=" bg-[#121519]    pb-[10rem] lg:h-[50vh] pb-30  ">
                         <div className=" mx-auto  lg:max-w-[68%] max-w-[94%] flex flex-col  gap-12 items-start sm:flex-row justify-between  lg:mx-auto">
                             <div className='w-[29.25rem] '>
                                 <FooterHeader text="The Equipping Center" />

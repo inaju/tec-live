@@ -5,7 +5,7 @@ import TextComponent from '../components/text.jsx';
 const Hero = () => {
   return (
     <div>
-      <div className="  lg:border-red-300 text-[14px] relative w-screen bg-no-repeat bg-[-7.85rem_-0.4rem] md:bg-[-0.625rem_-1rem] bg-[length:130vw_155.4375rem] lg:bg-[length:100vw_105.4375rem] h-[135.5rem]  lg:h-[112.5rem] 2lg:bg-[length:110vw_140.5rem] lg:bg-[length:100vw_120.5rem] bg-mobile-hero-pattern md:bg-hero-pattern">
+      <div className="   text-[14px] relative w-screen bg-no-repeat bg-[-7.85rem_-0.4rem] md:bg-[-0.625rem_-1rem] bg-[length:130vw_155.4375rem] lg:bg-[length:100vw_105.4375rem] h-[135.5rem]  lg:h-[112.5rem] 2lg:bg-[length:110vw_140.5rem] lg:bg-[length:100vw_120.5rem] bg-mobile-hero-pattern md:bg-hero-pattern">
         <div className="mx-auto max-w-[94%] lg:max-w-[68%] pt-4">
           <HeaderContainer />
           <div className="mt-[374px] md:mt-[40%] lg:mt-[22rem] lg:px-0 flex flex-col items-center gap-4">
