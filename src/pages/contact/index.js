@@ -6,9 +6,9 @@ import TextComponent from '@/components/text'
 const ContactPage = () => {
     return (
         <div className="bg-[#121519]">
-            <div className="text-[14px] relative w-screen bg-no-repeat bg-[-7.25rem_-0.4rem]  md:bg-[-10.25rem_-0.4rem] bg-[length:140vw_155.4375rem] h-[135.5rem]   lg:bg-[length:110vw_120.5rem] bg-mobile-contact-hero-pattern md:bg-contact-hero-pattern">
+            <div className="text-[14px]  relative w-screen bg-no-repeat bg-[-7.25rem_-0.4rem]  md:bg-[-10.25rem_-0.4rem] bg-[length:140vw_155.4375rem] h-[135.5rem]   lg:bg-[length:110vw_120.5rem] bg-mobile-contact-hero-pattern md:bg-contact-hero-pattern">
                 <div
-                    className='mx-auto  lg:max-w-[68%] max-w-[94%]'
+                    className='mx-auto  lg:max-w-[69%] max-w-[94%]'
                 >
                     <div>
                         <HeaderContainer />
@@ -54,8 +54,8 @@ const ContactPage = () => {
                         </form>
 
                     </div>
-                    <div className=" bg-[#121519]    pb-[10rem] lg:h-[50vh] pb-30  ">
-                        <div className=" mx-auto  lg:max-w-[68%] max-w-[94%] flex flex-col  gap-12 items-start sm:flex-row justify-between  lg:mx-auto">
+                    <div className=" bg-[#121519]   pb-[10rem] lg:h-[50vh] pb-30  ">
+                        <div className=" mx-auto  lg:max-w-[69%] max-w-[94%] flex flex-col  gap-12 items-start sm:flex-row justify-between  lg:mx-auto">
                             <div className='w-[29.25rem] '>
                                 <FooterHeader text="The Equipping Center" />
                                 <div className="mt-3 grid space-y-[1.25rem] text-sm">

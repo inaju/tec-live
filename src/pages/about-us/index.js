@@ -81,12 +81,12 @@ const AboutUs = () => {
                         </div>
                         <TextComponent
                             mode="paragraph-2"
-                            className="!text-[1.25rem] !text-left !text-[#121519] leading-[1.875rem]"
+                            className="!text-[1.7rem] lg:!text-[1.25rem] !text-left !text-[#121519] leading-[1.875rem]"
                             text="Pastor Nelson Iheagwam is a believer passionate about men coming to the truth of salvation, growing in the same and walking in the fullness of the plans and purposes of God for them. He is passionate about Apologetics, the things of the spirit, accurate teaching of God’s word and fervor seen in the heart and acts of the believer. With meetings under his belt, it is a testimony of his ministry that many have been undoubtedly touched by the power of the Spirit and fervor ignited in the heart of much more. It is his ultimate vision that men in their multitude be saved, trained and sent to duplicate the former in the lives of others as has been in theirs." />
                     </div>
                 </div>
             </div>
-            <div className="  h-[350vh] lg:h-[240vh] bg-[#121519]">
+            <div className="  h-[230vh] lg:h-[240vh] bg-[#121519]">
                 <BottomCTA />
             </div>
         </div>
